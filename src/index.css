@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: archi;
+  src: url(/VanDoesburgArchiType Regular.ttf);
+}
+
+.archi {
+  font-family: archi;
+}
