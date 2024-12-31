@@ -10,15 +10,22 @@ export default function FooterSection() {
           <div className="text-center">
             <Footer.Brand className="archi" href="/" src="/Logo-lannie.png" alt="Logo Lannie" name={companyName.toLocaleLowerCase()} />
           </div>
-          <div className="grid grid-cols-3 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
+          <div className="grid grid-cols-2 gap-4 sm:mt-4 sm:grid-cols-2 sm:gap-6">
             <div>
               <Footer.Title title="Over ons" />
               <Footer.LinkGroup col>
                 <Footer.Link href="#about">Lannie</Footer.Link>
               </Footer.LinkGroup>
             </div>
-
-            <div className="-ml-10">
+            <div>
+              <Footer.Title title="Legal" />
+              <Footer.LinkGroup col>
+                <Footer.Link href="/" target="blank">
+                  Privacy Policy
+                </Footer.Link>
+              </Footer.LinkGroup>
+            </div>
+            <div>
               <Footer.Title title="Volg Ons" />
               <Footer.LinkGroup col>
                 <Footer.Link href="https://www.linkedin.com/in/milan-mareels-58b472265/" target="blank">
@@ -26,7 +33,7 @@ export default function FooterSection() {
                 </Footer.Link>
               </Footer.LinkGroup>
             </div>
-            <div className="-ml-10">
+            <div>
               <Footer.Title title="Contacteer ons" />
               <Footer.LinkGroup col>
                 <Footer.Link href="mailto:milan.mareels@gmail.com">milan.mareels@gmail.com</Footer.Link>
