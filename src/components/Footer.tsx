@@ -1,6 +1,5 @@
 import { Footer } from "flowbite-react";
 import { BsInstagram, BsLinkedin } from "react-icons/bs";
-import { routerEnum } from "../routes/routesEnum";
 
 export default function FooterSection() {
   const companyName: string = import.meta.env.VITE_COMPANY_NAME!;
