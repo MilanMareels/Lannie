@@ -3,13 +3,14 @@ import Swal from "sweetalert2";
 
 export default function ContactForm() {
   const [result, setResult] = useState("");
+  const [accept, setAccept] = useState<boolean>(false);
+
   const subject: string = "Nieuw bericht van de klant";
   const companyName: string = import.meta.env.VITE_COMPANY_NAME!;
   const contactFormKey: string = import.meta.env.VITE_CONTACT_FORM_KEY!;
 
   const onSubmit = async (event: any) => {
     event.preventDefault();
-    setResult("Sending....");
     console.log(result);
 
     const formData = new FormData(event.target);
@@ -23,7 +24,7 @@ export default function ContactForm() {
 
     const data = await response.json();
 
-    if (data.success) {
+    if (data.success && accept) {
       setResult("Form Submitted Successfully");
       Swal.fire({
         title: "Succes!",
@@ -33,7 +34,6 @@ export default function ContactForm() {
       });
       event.target.reset();
     } else {
-      console.log("Error", data);
       setResult(data.message);
     }
   };
@@ -63,6 +63,17 @@ export default function ContactForm() {
             Bericht
           </label>
           <textarea name="message" className="w-full p-3 border-l-0 border-r-0 border-t-0 focus:outline-none focus:ring-0 focus:border-black" rows={4} placeholder="U bericht" required></textarea>
+        </div>
+
+        <div className="flex items-center mt-4">
+          <input type="checkbox" id="acceptTerms" name="acceptTerms" required className="mr-2" onClick={() => setAccept((prev) => !prev)} />
+          <label htmlFor="acceptTerms" className="text-gray-700">
+            Ik ga akkoord met de{" "}
+            <a href="/privacy" className="text-blue-500">
+              voorwaarden
+            </a>{" "}
+            en begrijp dat ik het bericht niet kan verzenden zonder mijn toestemming.
+          </label>
         </div>
 
         <div className="text-center">
