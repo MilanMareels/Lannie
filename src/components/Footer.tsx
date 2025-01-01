@@ -14,7 +14,7 @@ export default function FooterSection() {
             <div>
               <Footer.Title title="Over ons" />
               <Footer.LinkGroup col>
-                <Footer.Link href="/#about">Lannie</Footer.Link>
+                <Footer.Link href="/#about">{companyName}</Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>
