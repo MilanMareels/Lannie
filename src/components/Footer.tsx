@@ -29,7 +29,7 @@ export default function FooterSection() {
             <div>
               <Footer.Title title="Legal" />
               <Footer.LinkGroup col>
-                <Footer.Link href={`/${routerEnum.PRIVACY}`}>Privacy Policy</Footer.Link>
+                <Footer.Link href="/privacy">Privacy Policy</Footer.Link>
               </Footer.LinkGroup>
             </div>
           </div>
