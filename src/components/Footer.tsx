@@ -1,5 +1,6 @@
 import { Footer } from "flowbite-react";
 import { BsInstagram, BsLinkedin } from "react-icons/bs";
+import { routerEnum } from "../routes/routesEnum";
 
 export default function FooterSection() {
   const companyName: string = import.meta.env.VITE_COMPANY_NAME!;
@@ -10,19 +11,11 @@ export default function FooterSection() {
           <div className="text-center">
             <Footer.Brand className="archi" href="/" src="/Logo-lannie.png" alt="Logo Lannie" name={companyName.toLocaleLowerCase()} />
           </div>
-          <div className="grid grid-cols-2 gap-4 sm:mt-4 sm:grid-cols-2 sm:gap-6">
+          <div className="grid grid-cols-3 gap-4 sm:mt-4 sm:grid-cols-3 sm:gap-6">
             <div>
               <Footer.Title title="Over ons" />
               <Footer.LinkGroup col>
                 <Footer.Link href="#about">Lannie</Footer.Link>
-              </Footer.LinkGroup>
-            </div>
-            <div>
-              <Footer.Title title="Legal" />
-              <Footer.LinkGroup col>
-                <Footer.Link href="/" target="blank">
-                  Privacy Policy
-                </Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>
@@ -34,10 +27,9 @@ export default function FooterSection() {
               </Footer.LinkGroup>
             </div>
             <div>
-              <Footer.Title title="Contacteer ons" />
+              <Footer.Title title="Legal" />
               <Footer.LinkGroup col>
-                <Footer.Link href="mailto:milan.mareels@gmail.com">milan.mareels@gmail.com</Footer.Link>
-                <Footer.Link href="tel:+32489503661">+32489503661</Footer.Link>
+                <Footer.Link href={`/${routerEnum.PRIVACY}`}>Privacy Policy</Footer.Link>
               </Footer.LinkGroup>
             </div>
           </div>

@@ -40,7 +40,7 @@ export default function ContactForm() {
 
   return (
     <div className="flex items-center justify-center p-10 bg-gray-100" id="contact">
-      <form onSubmit={onSubmit} className="w-full max-w-5xl bg-white p-8 rounded-lg shadow-lg space-y-6">
+      <form onSubmit={onSubmit} className="w-full max-w-5xl bg-white p-8 shadow-lg space-y-6">
         <h2 className="text-2xl font-bold text-gray-800 text-center">Neem contact op</h2>
         <input type="hidden" name="subject" value={subject} />
         <input type="hidden" name="from_name" value={companyName} />

@@ -4,6 +4,7 @@ import ServiceDetails from "../components/ServiceDetails";
 import Page from "../pages/Page";
 import NavBarSection from "../components/NavBar";
 import FooterSection from "../components/Footer";
+import PrivacyPage from "../components/Privacy";
 
 export const createRouter = () => {
   return createBrowserRouter([
@@ -23,6 +24,16 @@ export const createRouter = () => {
         <>
           <NavBarSection />
           <ServiceDetails />
+          <FooterSection />
+        </>
+      ),
+    },
+    {
+      path: routerEnum.PRIVACY,
+      element: (
+        <>
+          <NavBarSection />
+          <PrivacyPage />
           <FooterSection />
         </>
       ),
