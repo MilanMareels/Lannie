@@ -29,8 +29,14 @@ export const createRouter = () => {
       ),
     },
     {
-      path: routerEnum.PRIVACY,
-      element: <PrivacyPage />,
+      path: routerEnum.LEGAL,
+      element: (
+        <>
+          <NavBarSection />
+          <PrivacyPage />
+          <FooterSection />
+        </>
+      ),
     },
   ]);
 };
