@@ -19,16 +19,6 @@ export const createRouter = () => {
       ),
     },
     {
-      path: routerEnum.PRIVACY,
-      element: (
-        <>
-          <NavBarSection />
-          <PrivacyPage />
-          <FooterSection />
-        </>
-      ),
-    },
-    {
       path: routerEnum.SERVICE_DETAILS,
       element: (
         <>
@@ -37,6 +27,10 @@ export const createRouter = () => {
           <FooterSection />
         </>
       ),
+    },
+    {
+      path: routerEnum.PRIVACY,
+      element: <PrivacyPage />,
     },
   ]);
 };
