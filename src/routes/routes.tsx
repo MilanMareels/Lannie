@@ -19,21 +19,21 @@ export const createRouter = () => {
       ),
     },
     {
-      path: routerEnum.SERVICE_DETAILS,
-      element: (
-        <>
-          <NavBarSection />
-          <ServiceDetails />
-          <FooterSection />
-        </>
-      ),
-    },
-    {
       path: routerEnum.PRIVACY,
       element: (
         <>
           <NavBarSection />
           <PrivacyPage />
+          <FooterSection />
+        </>
+      ),
+    },
+    {
+      path: routerEnum.SERVICE_DETAILS,
+      element: (
+        <>
+          <NavBarSection />
+          <ServiceDetails />
           <FooterSection />
         </>
       ),
