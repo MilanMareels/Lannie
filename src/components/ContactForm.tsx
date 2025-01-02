@@ -77,7 +77,7 @@ export default function ContactForm() {
         </div>
 
         <div className="text-center">
-          <input type="submit" value="Send Message" className="w-full bg-transparent border-2 rounded-none border-black text-black p-3 cursor-pointer" />
+          <input type="submit" value="Bericht verzenden" className="w-full bg-transparent border-2 rounded-none border-black text-black p-3 cursor-pointer" />
         </div>
       </form>
     </div>
