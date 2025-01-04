@@ -11,7 +11,6 @@ export default function ContactForm() {
 
   const onSubmit = async (event: any) => {
     event.preventDefault();
-    console.log(result);
 
     const formData = new FormData(event.target);
 

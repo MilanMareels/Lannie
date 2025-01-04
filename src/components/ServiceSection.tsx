@@ -36,7 +36,7 @@ export default function ServiceSection() {
       </div>
       <section className="grid md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1 gap-10 p-10 m-auto cursor-pointer">
         {serviceItems.map((i) => (
-          <Link to={`/services/${i.id}`}>
+          <Link key={i.id} to={`/services/${i.id}`}>
             <Card theme={customTheme} className="w-full max-w-xs" imgAlt="Meaningful alt text for an image that is not purely decorative" imgSrc={i.src[0]}>
               <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{i.title}</h5>
               <p className="font-normal text-gray-700 dark:text-gray-400 truncate">{i.description}</p>

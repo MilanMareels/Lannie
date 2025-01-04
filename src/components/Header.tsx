@@ -7,7 +7,7 @@ export default function Header() {
       <div className="h-56 sm:h-64 xl:h-80 2xl:h-[600px]">
         <Carousel slideInterval={3000}>
           {headerImages.map((image, i) => (
-            <img src={image.image} alt={`Header-foto-${i + 1}`} />
+            <img key={i} src={image.image} alt={`Header-foto-${i + 1}`} />
           ))}
         </Carousel>
       </div>
