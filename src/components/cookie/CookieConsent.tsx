@@ -6,7 +6,9 @@ export default function CookieConsent() {
   const [cookie, setCookie] = useCookies(["cookieContent"]);
 
   const giveCookieConsent = () => {
-    setCookie("cookieContent", true, { path: "/" });
+    let date = new Date();
+    date.setDate(date.getDate() + 7);
+    setCookie("cookieContent", true, { path: "/", expires: date });
   };
 
   return (
