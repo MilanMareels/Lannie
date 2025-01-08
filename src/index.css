@@ -10,3 +10,7 @@
 .archi {
   font-family: archi;
 }
+
+html {
+  scroll-behavior: smooth;
+}
