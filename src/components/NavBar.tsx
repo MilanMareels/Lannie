@@ -18,7 +18,7 @@ export default function NavBarSection() {
   };
 
   return (
-    <Navbar fluid rounded theme={customTheme}>
+    <Navbar fluid rounded theme={customTheme} className="fixed top-0 left-0 w-full z-50 rounded-none">
       <Navbar.Brand href="/">
         <img src="/Logo-lannie.png" className="mr-3 h-6 sm:h-9" alt="Logo Lannie" />
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white archi">{companyName.toLocaleLowerCase()}</span>
@@ -31,11 +31,11 @@ export default function NavBarSection() {
         <Navbar.Link href="/#services" className="text-lg">
           Oplossingen
         </Navbar.Link>
-        <Navbar.Link href="/#contact" className="text-lg">
-          Contacteer ons
-        </Navbar.Link>
         <Navbar.Link href="/#about" className="text-lg">
           Over ons
+        </Navbar.Link>
+        <Navbar.Link href="/#contact" className="text-lg">
+          Contact
         </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
