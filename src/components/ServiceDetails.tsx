@@ -1,11 +1,26 @@
-import { Carousel, HR } from "flowbite-react";
+import { Carousel, CustomFlowbiteTheme, HR } from "flowbite-react";
 import ContactForm from "./ContactForm";
 import { useParams } from "react-router-dom";
 import { serviceItems } from "../data/serviceItems";
+import { useEffect } from "react";
 
 export default function ServiceDetails() {
   const { id } = useParams();
   const service = serviceItems.find((item) => item.id === parseInt(id!))!;
+
+  const customTheme: CustomFlowbiteTheme["carousel"] = {
+    scrollContainer: {
+      base: "flex h-full snap-mandatory overflow-y-hidden overflow-x-scroll scroll-smooth rounded-none",
+      snap: "snap-x",
+    },
+  };
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
 
   return (
     <>
@@ -17,7 +32,7 @@ export default function ServiceDetails() {
         </div>
         <HR />
         <section className="h-64 sm:h-64 xl:h-80 2xl:h-[600px]">
-          <Carousel slideInterval={3000}>
+          <Carousel slideInterval={3000} theme={customTheme}>
             {service.src.map((src, index) => (
               <img key={index} src={src} alt={`Service image ${index + 1}`} />
             ))}

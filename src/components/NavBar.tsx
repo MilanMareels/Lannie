@@ -19,7 +19,7 @@ export default function NavBarSection() {
 
   return (
     <Navbar fluid rounded theme={customTheme}>
-      <Navbar.Brand>
+      <Navbar.Brand href="/">
         <img src="/Logo-lannie.png" className="mr-3 h-6 sm:h-9" alt="Logo Lannie" />
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white archi">{companyName.toLocaleLowerCase()}</span>
       </Navbar.Brand>
