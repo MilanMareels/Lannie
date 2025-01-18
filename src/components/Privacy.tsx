@@ -68,7 +68,7 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="text-2xl font-semibold text-gray-800">6. Cookies</h2>
-            <p>Wij gebruiken geen cookies of vergelijkbare technologieën om persoonsgegevens te verzamelen of te volgen.</p>
+            <p>Wij gebruiken cookies om persoonsgegevens tijdelijk te verzamelen.</p>
           </section>
 
           <section>

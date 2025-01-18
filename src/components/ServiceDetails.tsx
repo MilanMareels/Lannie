@@ -40,7 +40,7 @@ export default function ServiceDetails() {
         </section>
         <HR />
         <section className="flex flex-col sm:flex-row w-full pl-4">
-          <div className="w-full sm:ml-6 pt-4 sm:pt-0">
+          <div className="w-full pt-4 sm:pt-0">
             <h1 className="text-xl font-bold">Prijs</h1>
             <p className="mt-2 mr-4">
               De prijs voor het {service.title} pakket start vanaf &euro;{service.price}. Houd er rekening mee dat de prijs kan variëren afhankelijk van extra wensen, zoals aanpassingen in ontwerp,
