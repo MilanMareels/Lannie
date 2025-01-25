@@ -28,7 +28,7 @@ export default function ServiceSection() {
         <h1 className="font-semibold text-3xl">Oplossingen</h1>
         <div className="max-w-[700px] m-auto text-center p-5">
           <p>
-            Hieronder vind je de oplossingen die ik aanbied. Ik help je graag bij het realiseren van een professionele en gebruiksvriendelijke website, helemaal afgestemd op jouw wensen. Of je nu een
+            Hieronder vind je de oplossingen die ik aanbied. Ik help je graag bij het realiseren van een professionele en gebruiksvriendelijke website. Of je nu een
             eenvoudige website nodig hebt of op zoek bent naar een meer uitgebreide oplossing met extra functionaliteiten, ik bied de juiste ondersteuning om jouw online aanwezigheid te versterken.
             Neem gerust contact op voor meer informatie of om te bespreken welk pakket het beste bij jouw behoeften past!
           </p>
