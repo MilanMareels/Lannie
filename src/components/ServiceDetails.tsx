@@ -31,7 +31,7 @@ export default function ServiceDetails() {
           <p className="mt-2 mr-4">{service.description}</p>
         </div>
         <HR />
-        <section className="h-64 sm:h-64 xl:h-80 2xl:h-[600px]">
+        <section className="h-64 sm:h-64 xl:h-80 2xl:h-[600px] grayscale">
           <Carousel slideInterval={3000} theme={customTheme}>
             {service.src.map((src, index) => (
               <img key={index} src={src} alt={`Service image ${index + 1}`} />

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function ServiceSection() {
   const customTheme: CustomFlowbiteTheme["card"] = {
     root: {
-      base: "flex border border-gray-200 bg-white shadow-lg dark:border-gray-700 dark:bg-gray-800 hover:scale-105 ease-in-out duration-500",
+      base: "flex border border-gray-200 bg-white shadow-lg dark:border-gray-700 dark:bg-gray-800 hover:scale-105 ease-in-out duration-500 grayscale",
       children: "flex h-full flex-col justify-center gap-4 p-6",
       horizontal: {
         off: "flex-col",
@@ -16,7 +16,7 @@ export default function ServiceSection() {
     img: {
       base: "",
       horizontal: {
-        off: "",
+        off: "h-[200px]",
         on: "h-96 w-full object-cover md:h-auto md:w-48 md:rounded-none md:rounded-l-lg",
       },
     },
@@ -38,7 +38,7 @@ export default function ServiceSection() {
         {serviceItems.map((i) => (
           <Link key={i.id} to={`/services/${i.id}`}>
             <Card theme={customTheme} className="w-full max-w-xs" imgAlt="Meaningful alt text for an image that is not purely decorative" imgSrc={i.src[0]}>
-              <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{i.title}</h5>
+              <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white truncate">{i.title}</h5>
               <p className="font-normal text-gray-700 dark:text-gray-400 truncate">{i.description}</p>
             </Card>
           </Link>
