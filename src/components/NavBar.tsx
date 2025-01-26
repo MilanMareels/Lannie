@@ -11,19 +11,20 @@ export default function NavBarSection() {
         off: "border-b border-gray-100 text-white hover:bg-black hover:text-white hover:tracking-wide duration-500 dark:text-gray-400 md:border-0 md:hover:bg-transparent md:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-white",
       },
       disabled: {
-        on: "text-gray-400 hover:cursor-not-allowed dark:text-gray-600",
+        on: "hover:cursor-not-allowed text-white",
         off: "",
       },
     },
-    brand: {
-      base: "flex items-center mt-4",
+    toggle: {
+      base: "inline-flex items-center rounded-lg p-2 text-sm hover:text-black text-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden",
+      icon: "h-6 w-6 shrink-0",
     },
   };
 
   return (
     <Navbar fluid rounded theme={customTheme} className="rounded-none bg-black">
       <Navbar.Brand href="/">
-        <span className="text-xl font-semibold text-white archi">
+        <span className="text-xl font-semibold text-white archi mt-4">
           {companyName.toLocaleLowerCase()}
         </span>
       </Navbar.Brand>
