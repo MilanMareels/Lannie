@@ -7,7 +7,7 @@ export default function App() {
   return (
     <div
       style={{
-        backgroundImage: `url('/bg-2.jpg')`,
+        backgroundImage: `url('/bg-3.jpg')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
