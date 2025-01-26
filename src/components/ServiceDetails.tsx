@@ -27,8 +27,8 @@ export default function ServiceDetails() {
       <div className="flex flex-col w-full md:w-[60%] m-auto">
         <HR />
         <div className="w-full pb-4 sm:pb-0 pl-4">
-          <h1 className="text-2xl font-bold">{service.title}</h1>
-          <p className="mt-2 mr-4">{service.description}</p>
+          <h1 className="text-2xl font-bold text-white">{service.title}</h1>
+          <p className="mt-2 mr-4 text-white">{service.description}</p>
         </div>
         <HR />
         <section className="h-64 sm:h-64 xl:h-80 2xl:h-[600px] grayscale">
@@ -41,10 +41,14 @@ export default function ServiceDetails() {
         <HR />
         <section className="flex flex-col sm:flex-row w-full pl-4">
           <div className="w-full pt-4 sm:pt-0">
-            <h1 className="text-xl font-bold">Prijs</h1>
-            <p className="mt-2 mr-4">
-              De prijs voor het {service.title} pakket start vanaf &euro;{service.price}. Houd er rekening mee dat de prijs kan variëren afhankelijk van extra wensen, zoals aanpassingen in ontwerp,
-              kleuren of andere specifieke verzoeken. Neem contact met ons op voor een offerte op maat, afhankelijk van je specifieke wensen en aanpassingen.
+            <h1 className="text-xl font-bold text-white">Prijs</h1>
+            <p className="mt-2 mr-4 text-white">
+              De prijs voor het {service.title} pakket start vanaf &euro;
+              {service.price}. Houd er rekening mee dat de prijs kan variëren
+              afhankelijk van extra wensen, zoals aanpassingen in ontwerp,
+              kleuren of andere specifieke verzoeken. Neem contact met ons op
+              voor een offerte op maat, afhankelijk van je specifieke wensen en
+              aanpassingen.
             </p>
           </div>
         </section>

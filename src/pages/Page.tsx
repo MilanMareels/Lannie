@@ -15,9 +15,7 @@ export default function Page() {
       <ContactButton />
       <ServiceSection />
       <AboutUsSection />
-      <section className="bg-gray-100">
-        <ContactForm />
-      </section>
+      <ContactForm />
       <ScrollToTopButton />
       {!cookies.cookieContent && <CookieConsent />}
     </main>
