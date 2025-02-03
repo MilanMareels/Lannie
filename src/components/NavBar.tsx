@@ -22,11 +22,9 @@ export default function NavBarSection() {
   };
 
   return (
-    <Navbar fluid rounded theme={customTheme} className="rounded-none bg-black">
+    <Navbar fluid rounded theme={customTheme} className="rounded-none bg-black p-4">
       <Navbar.Brand href="/">
-        <span className="text-xl font-semibold text-white archi mt-4">
-          {companyName.toLocaleLowerCase()}
-        </span>
+        <span className="text-xl font-semibold text-white archi">{companyName.toLocaleLowerCase()}</span>
       </Navbar.Brand>
       <Navbar.Toggle />
       <Navbar.Collapse>
