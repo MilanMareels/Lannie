@@ -16,7 +16,6 @@ export default function Page() {
       <ServiceSection />
       <AboutUsSection />
       <ContactForm />
-      <ScrollToTopButton />
       {!cookies.cookieContent && <CookieConsent />}
     </main>
   );

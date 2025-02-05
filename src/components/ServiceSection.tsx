@@ -29,14 +29,7 @@ export default function ServiceSection() {
       id="services"
     >
       <div className="pt-10 flex justify-center items-center flex-col gap-5">
-        <TrueFocus
-          sentence="Web Oplossingen"
-          manualMode={false}
-          blurAmount={5}
-          borderColor="cyan"
-          animationDuration={1}
-          pauseBetweenAnimations={2}
-        />
+        <h1 className="text-white text-3xl font-bold">Web Oplossingen</h1>
         <div className="text-white max-w-[700px] m-auto text-center p-5">
           <p>
             Hieronder vind je de oplossingen die ik aanbied. Ik help je graag
