@@ -15,9 +15,6 @@ export default function NavBarSection() {
         off: "",
       },
     },
-    brand: {
-      base: "relative top-1",
-    },
     toggle: {
       base: "inline-flex items-center rounded-lg p-2 text-sm hover:text-black text-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden",
       icon: "h-6 w-6 shrink-0",
