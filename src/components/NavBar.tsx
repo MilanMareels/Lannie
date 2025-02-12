@@ -39,9 +39,6 @@ export default function NavBarSection() {
           <Navbar.Link href="/#services" className="text-lg">
             Oplossingen
           </Navbar.Link>
-          <Navbar.Link href="/#about" className="text-lg">
-            Over mij
-          </Navbar.Link>
           <Navbar.Link href="/#contact" className="text-lg">
             Contact
           </Navbar.Link>
