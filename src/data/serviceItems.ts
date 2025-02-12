@@ -20,10 +20,10 @@ export const serviceItems = [
   {
     id: 3,
     src: ["/basic-foto-5.jpg", "/basic-foto-2.jpg", "/basic-foto-6.jpg"],
-    title: "Website Revival",
-    intro: "Een naadloze overname van uw bestaande website, met behoud van alle essentiële elementen.",
+    title: "Website Renewal",
+    intro: "Een vernieuwde versie van uw bestaande website, met behoud van alle essentiële elementen en een frisse, moderne uitstraling.",
     description:
-      "Het Website Overname pakket biedt een soepele overgang van je bestaande website naar een moderne, goed functionerende versie. Dit pakket zorgt ervoor dat je oude website behouden blijft, maar met verbeteringen op het gebied van design, prestaties en gebruiksvriendelijkheid, zodat je online aanwezigheid optimaal blijft zonder verlies van inhoud of functionaliteit.",
-    price: 100,
+      "Het Website Vernieuwingspakket biedt een naadloze overgang naar een moderne, goed functionerende website. Dit pakket behoudt de kern van je oude website, maar zorgt voor verbeteringen op het gebied van design, prestaties en gebruiksvriendelijkheid. Zo blijft je online aanwezigheid optimaal, zonder verlies van inhoud of functionaliteit.",
+    price: 300,
   },
 ];
