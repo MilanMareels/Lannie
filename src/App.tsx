@@ -7,11 +7,7 @@ export default function App() {
   return (
     <div
       style={{
-        backgroundImage: `url('/bg-3.jpg')`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        minHeight: "100vh",
+        backgroundColor: "red",
       }}
     >
       <RouterProvider router={router} />

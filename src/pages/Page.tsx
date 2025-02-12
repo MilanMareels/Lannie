@@ -11,7 +11,6 @@ export default function Page() {
   const [cookies] = useCookies(["cookieContent"]);
   return (
     <main>
-      <Header />
       <ContactButton />
       <ServiceSection />
       <AboutUsSection />
