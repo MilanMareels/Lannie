@@ -24,6 +24,6 @@ export const serviceItems = [
     intro: "Een vernieuwde versie van uw bestaande website, met behoud van alle essentiële elementen en een frisse, moderne uitstraling.",
     description:
       "Het Website Vernieuwingspakket biedt een naadloze overgang naar een moderne, goed functionerende website. Dit pakket behoudt de kern van je oude website, maar zorgt voor verbeteringen op het gebied van design, prestaties en gebruiksvriendelijkheid. Zo blijft je online aanwezigheid optimaal, zonder verlies van inhoud of functionaliteit.",
-    price: 300,
+    price: 350,
   },
 ];
