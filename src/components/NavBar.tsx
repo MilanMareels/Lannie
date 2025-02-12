@@ -15,6 +15,9 @@ export default function NavBarSection() {
         off: "",
       },
     },
+    brand: {
+      base: "flex items-center",
+    },
     toggle: {
       base: "inline-flex items-center rounded-lg p-2 text-sm hover:text-black text-black hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden",
       icon: "h-6 w-6 shrink-0",
@@ -22,10 +25,11 @@ export default function NavBarSection() {
   };
 
   return (
-    <div className="flex items-center justify-center p-4 ro">
+    <div className="flex items-center justify-center p-4">
       <Navbar fluid rounded theme={customTheme} className="p-4 w-[1200px]">
-        <Navbar.Brand>
-          <span className="text-xl font-semibold text-black">{companyName}</span>
+        <Navbar.Brand href="/">
+          <img src="/Logo-lannie.png" className="mr-3 h-6 sm:h-9 rounded" alt="Lannie Logo" />
+          <span className="text-xl font-bold">{companyName.toLocaleUpperCase()}</span>
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse>
