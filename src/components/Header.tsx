@@ -1,27 +1,23 @@
-import {
-  Carousel,
-  CustomFlowbiteTheme,
-  FlowbiteCarouselTheme,
-} from "flowbite-react";
-import { headerImages } from "../data/headerImages";
+import NavBarSection from "./NavBar";
+import ContactButton from "./ContactButton";
 
 export default function Header() {
-  const customTheme: CustomFlowbiteTheme["carousel"] = {
-    scrollContainer: {
-      base: "flex h-full snap-mandatory overflow-y-hidden overflow-x-scroll scroll-smooth rounded-none",
-      snap: "snap-x",
-    },
-  };
-
   return (
-    <header>
-      <div className="h-56 sm:h-64 xl:h-80 2xl:h-[600px] grayscale">
-        <Carousel slideInterval={10000} indicators={false} theme={customTheme}>
-          {headerImages.map((image, i) => (
-            <img key={i} src={image.image} alt={`Header-foto-${i + 1}`} />
-          ))}
-        </Carousel>
-      </div>
+    <header
+      style={{
+        backgroundImage: `url('/bg.png')`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        minHeight: "100vh",
+      }}
+    >
+      <NavBarSection />
+      <section className="max-w-[1200px] w-full mx-auto px-4 text-white text-left mt-32">
+        <h1 className="text-6xl md:text-8xl">Ben jij online vindbaar?</h1>
+        <p className="text-lg mt-4">Zo niet, dan is het tijd voor een professionele website!</p>
+        <ContactButton />
+      </section>
     </header>
   );
 }

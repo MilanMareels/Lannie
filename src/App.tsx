@@ -5,15 +5,7 @@ export default function App() {
   const router = createRouter();
 
   return (
-    <div
-      style={{
-        backgroundImage: `url('/bg-3.jpg')`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        minHeight: "100vh",
-      }}
-    >
+    <div>
       <RouterProvider router={router} />
     </div>
   );

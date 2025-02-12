@@ -12,7 +12,6 @@ export const createRouter = () => {
       path: routerEnum.PAGE,
       element: (
         <>
-          <NavBarSection />
           <Page />
           <FooterSection />
         </>
