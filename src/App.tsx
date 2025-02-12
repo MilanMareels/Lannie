@@ -5,11 +5,7 @@ export default function App() {
   const router = createRouter();
 
   return (
-    <div
-      style={{
-        backgroundColor: "red",
-      }}
-    >
+    <div>
       <RouterProvider router={router} />
     </div>
   );
