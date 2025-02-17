@@ -1,10 +1,10 @@
 interface CardProps {
   title: string;
   intro: string;
-  price: number;
+  introPrice: string;
 }
 
-export default function Card({ title, intro, price }: CardProps) {
+export default function Card({ title, intro, introPrice }: CardProps) {
   return (
     <div className="service-card rounded-lg relative h-[300px] w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127]">
       <svg
@@ -25,7 +25,7 @@ export default function Card({ title, intro, price }: CardProps) {
       <p className="font-bold text-2xl group-hover:text-white text-black/80">{title}</p>
       <p className="text-gray-400 text-sm">{intro}</p>
 
-      <p className="absolute bottom-3 right-3 text-2xl font-bold text-gray-300 group-hover:text-gray-500">Vanaf &euro;{price}</p>
+      <p className="absolute bottom-3 right-3 text-2xl font-bold text-gray-300 group-hover:text-gray-500">{introPrice}</p>
     </div>
   );
 }

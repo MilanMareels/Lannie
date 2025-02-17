@@ -21,7 +21,7 @@ export default function ServiceSection() {
         <section className="flex gap-5 p-5 flex-wrap justify-center">
           {serviceItems.map((i) => (
             <Link key={i.id} to={`/services/${i.id}`}>
-              <Card title={i.title} intro={i.intro} price={i.price} />
+              <Card title={i.title} intro={i.intro} introPrice={i.introPrice} />
             </Link>
           ))}
         </section>

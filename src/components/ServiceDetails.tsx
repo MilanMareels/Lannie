@@ -44,9 +44,9 @@ export default function ServiceDetails() {
           <div className="w-full pt-4 sm:pt-0">
             <h1 className="text-xl font-bold text-black">Prijs</h1>
             <p className="mt-2 mr-4 text-black">
-              De prijs voor het {service.title} pakket start vanaf &euro;
-              {service.price}. Houd er rekening mee dat de prijs kan variëren afhankelijk van extra wensen, zoals aanpassingen in ontwerp, kleuren of
-              andere specifieke verzoeken. Neem contact met ons op voor een offerte op maat, afhankelijk van je specifieke wensen en aanpassingen.
+              De prijs voor het {service.title} pakket {service.price}. Houd er rekening mee dat de prijs kan variëren afhankelijk van extra wensen,
+              zoals aanpassingen in ontwerp, kleuren of andere specifieke verzoeken. Neem contact met ons op voor een offerte op maat, afhankelijk van
+              je specifieke wensen en aanpassingen.
             </p>
           </div>
         </section>
