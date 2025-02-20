@@ -7,7 +7,7 @@ interface CardProps {
 
 export default function Card({ service }: CardProps) {
   return (
-    <div className="service-card rounded-lg relative h-[500px] w-[400px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127]">
+    <div className="service-card rounded-lg relative h-[500px] w-[370px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127]">
       <svg
         stroke-linejoin="round"
         stroke-linecap="round"
