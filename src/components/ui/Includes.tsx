@@ -19,6 +19,10 @@ export default function Includes({ service }: IncludesProps) {
       </div>
       <div className="flex gap-1 items-center">
         <CheckIcon />
+        <p className="text-gray-400 text-sm text-wrap">{service.includes.ontwerp}</p>
+      </div>
+      <div className="flex gap-1 items-center">
+        <CheckIcon />
         <p className="text-gray-400 text-sm text-wrap">{service.includes.mobile}</p>
       </div>
       <div className="flex gap-1 items-center">
