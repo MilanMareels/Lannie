@@ -15,7 +15,7 @@ export default function ServiceSection() {
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-          minHeight: "600px",
+          minHeight: "900px",
         }}
         className="relative rounded-none md:rounded-xl mt-6 max-w-[1500px] w-full flex items-end justify-center"
       >

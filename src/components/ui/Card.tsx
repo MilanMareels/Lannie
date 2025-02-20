@@ -1,5 +1,4 @@
 import { Service } from "../../types/service";
-import CheckIcon from "./CheckIcon";
 import Includes from "./Includes";
 
 interface CardProps {
