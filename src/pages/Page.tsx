@@ -11,8 +11,8 @@ export default function Page() {
     <main>
       <Header />
       <ServiceSection />
-      <Acordion />
       <ContactForm />
+      <Acordion />
       {!cookies.cookieContent && <CookieConsent />}
     </main>
   );

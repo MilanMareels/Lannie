@@ -2,7 +2,7 @@ import { Accordion } from "flowbite-react";
 
 export default function Acordion() {
   return (
-    <div className="max-w-[1500px] w-full m-auto mt-20 pl-4 pr-4">
+    <div className="max-w-[1500px] w-full m-auto mb-20 pl-4 pr-4">
       <h1 className="text-2xl font-semibold mb-4">Veelgestelde vragen</h1>
       <Accordion collapseAll>
         <Accordion.Panel>
