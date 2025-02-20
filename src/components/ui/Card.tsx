@@ -1,12 +1,14 @@
+import { Service } from "../../types/service";
+import CheckIcon from "./CheckIcon";
+import Includes from "./Includes";
+
 interface CardProps {
-  title: string;
-  intro: string;
-  introPrice: string;
+  service: Service;
 }
 
-export default function Card({ title, intro, introPrice }: CardProps) {
+export default function Card({ service }: CardProps) {
   return (
-    <div className="service-card rounded-lg relative h-[300px] w-[300px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127]">
+    <div className="service-card rounded-lg relative h-[500px] w-[400px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127]">
       <svg
         stroke-linejoin="round"
         stroke-linecap="round"
@@ -22,10 +24,13 @@ export default function Card({ title, intro, introPrice }: CardProps) {
         <line y2="21" x2="12" y1="17" x1="12"></line>
       </svg>
 
-      <p className="font-bold text-2xl group-hover:text-white text-black/80">{title}</p>
-      <p className="text-gray-400 text-sm">{intro}</p>
+      <p className="font-bold text-2xl group-hover:text-white text-black/80">{service.title}</p>
 
-      <p className="absolute bottom-3 right-3 text-2xl font-bold text-gray-300 group-hover:text-gray-500">{introPrice}</p>
+      <p className="text-gray-400 text-sm">{service.intro}</p>
+
+      <Includes service={service} />
+
+      <p className="absolute bottom-3 right-3 text-2xl font-bold text-gray-300 group-hover:text-gray-500">{service.introPrice}</p>
     </div>
   );
 }

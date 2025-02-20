@@ -1,6 +1,7 @@
 import { serviceItems } from "../data/serviceItems";
 import { Link } from "react-router-dom";
 import Card from "./ui/Card";
+import { Service } from "../types/service";
 
 export default function ServiceSection() {
   return (
@@ -19,9 +20,9 @@ export default function ServiceSection() {
         className="relative rounded-none md:rounded-xl mt-6 max-w-[1500px] w-full flex items-end justify-center"
       >
         <section className="flex gap-5 p-5 flex-wrap justify-center">
-          {serviceItems.map((i) => (
-            <Link key={i.id} to={`/services/${i.id}`}>
-              <Card title={i.title} intro={i.intro} introPrice={i.introPrice} />
+          {serviceItems.map((service) => (
+            <Link key={service.id} to={`/services/${service.id}`}>
+              <Card service={service as unknown as Service} />
             </Link>
           ))}
         </section>
