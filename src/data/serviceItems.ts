@@ -11,7 +11,7 @@ export const serviceItems = [
       mobile: "Mobielvriendelijk",
       ontwerp: "Op basis van een template",
       gdpr: "Basis Privacy- & Cookiebeleid",
-      hosting: "Online hosting",
+      hosting: "Online webhosting",
     },
     price:
       "De prijs voor het Basic Solution pakket start vanaf €300. Houd er rekening mee dat de prijs kan variëren afhankelijk van extra wensen, zoals aanpassingen in ontwerp, kleuren of andere specifieke verzoeken. Let op: de prijs is exclusief de kosten voor een domeinnaam. Neem contact met ons op voor een offerte op maat, afhankelijk van je specifieke wensen en aanpassingen.",
@@ -29,7 +29,7 @@ export const serviceItems = [
       mobile: "Mobielvriendelijk",
       ontwerp: "Op basis van een template",
       gdpr: "Basis Privacy- & Cookiebeleid",
-      hosting: "Online hosting",
+      hosting: "Online webhosting",
     },
     price:
       "De prijs voor het Advanced Solution pakket start vanaf €400. Houd er rekening mee dat de prijs kan variëren afhankelijk van extra wensen, zoals aanpassingen in ontwerp, kleuren of andere specifieke verzoeken. Let op: de prijs is exclusief de kosten voor een domeinnaam. Neem contact met ons op voor een offerte op maat, afhankelijk van je specifieke wensen en aanpassingen.",
