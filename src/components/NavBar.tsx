@@ -28,7 +28,7 @@ export default function NavBarSection() {
     <div className="flex items-center justify-center p-4">
       <Navbar fluid rounded theme={customTheme} className="p-4 w-[1200px] shadow-lg">
         <Navbar.Brand href="/">
-          <img src="/Logo-lannie.png" className="mr-3 h-6 sm:h-9 rounded" alt="Lannie Logo" />
+          <img src="/Logo-lannie.png" className="mr-3 h-6 sm:h-9 rounded" alt="webdesign in Merksem" />
           <span className="text-xl font-bold">{companyName.toLocaleUpperCase()}</span>
         </Navbar.Brand>
         <Navbar.Toggle />

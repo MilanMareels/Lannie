@@ -11,7 +11,7 @@ export default function FooterSection() {
       <div className="w-full">
         <div className="grid w-full justify-center sm:flex sm:justify-between md:grid-cols-1">
           <div className="text-center">
-            <h1 className="archi text-black">{companyName.toLocaleLowerCase()}</h1>
+            <h1 className="archi text-black mb-5 md:mb-0">{companyName.toLocaleLowerCase()}</h1>
           </div>
           <div className="grid grid-cols-3 gap-4 sm:mt-4 sm:grid-cols-3 sm:gap-6">
             <div>
@@ -19,6 +19,9 @@ export default function FooterSection() {
               <Footer.LinkGroup col>
                 <Footer.Link href="/" className="text-black">
                   1019.515.530
+                </Footer.Link>
+                <Footer.Link href="tel:0489503661" className="text-black">
+                  0489503661
                 </Footer.Link>
               </Footer.LinkGroup>
             </div>
