@@ -34,7 +34,7 @@ export default function ServiceDetails() {
         <section className="h-64 sm:h-64 xl:h-80 2xl:h-[600px]">
           <Carousel slideInterval={3000} theme={customTheme}>
             {service.src.map((src, index) => (
-              <img key={index} src={src} alt="webdesign in Merksem" />
+              <img loading="lazy" key={index} src={src} alt="webdesign in Merksem" />
             ))}
           </Carousel>
         </section>

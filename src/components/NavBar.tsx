@@ -28,7 +28,7 @@ export default function NavBarSection() {
     <div className="flex items-center justify-center p-4">
       <Navbar fluid rounded theme={customTheme} className="p-4 w-[1200px] shadow-lg">
         <Navbar.Brand href="/">
-          <img src="/Logo-lannie.png" className="mr-3 h-6 sm:h-9 rounded" alt="webdesign in Merksem" />
+          <img src="/Logo-lannie.png" className="mr-3 h-6 sm:h-9 rounded" alt="webdesign in Merksem" loading="lazy" />
           <span className="text-xl font-bold">{companyName.toLocaleUpperCase()}</span>
         </Navbar.Brand>
         <Navbar.Toggle />
@@ -36,7 +36,7 @@ export default function NavBarSection() {
           <Navbar.Link href="/" className="text-lg">
             Startpagina
           </Navbar.Link>
-          <Navbar.Link href="/#services" className="text-lg">
+          <Navbar.Link href="/#oplossingen" className="text-lg">
             Oplossingen
           </Navbar.Link>
           <Navbar.Link href="/#contact" className="text-lg">
