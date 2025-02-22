@@ -14,7 +14,7 @@ export const serviceItems = [
       hosting: "Online webhosting",
     },
     price:
-      "De prijs voor het Basic Solution pakket start vanaf €300. Houd er rekening mee dat de prijs kan variëren afhankelijk van extra wensen, zoals aanpassingen in ontwerp, kleuren of andere specifieke verzoeken. Let op: de prijs is exclusief de kosten voor een domeinnaam. Neem contact met ons op voor een offerte op maat, afhankelijk van je specifieke wensen en aanpassingen.",
+      "De prijs voor het Basic Solution pakket start vanaf €200. Houd er rekening mee dat de prijs kan variëren afhankelijk van extra wensen, zoals aanpassingen in ontwerp, kleuren of andere specifieke verzoeken. Let op: de prijs is exclusief de kosten voor een domeinnaam. Neem contact met ons op voor een offerte op maat, afhankelijk van je specifieke wensen en aanpassingen.",
     introPrice: "Vanaf €200",
   },
   {
