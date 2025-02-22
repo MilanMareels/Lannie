@@ -5,7 +5,7 @@ export const serviceItems = [
     title: "Basic Solution",
     intro: "Een geavanceerde website met alle essentiële elementen voor online zichtbaarheid, inclusief een modern design.",
     description:
-      "Het Basic Web Solution pakket biedt je een professionele one-page website, perfect voor een sterke en efficiënte online aanwezigheid. Dit pakket omvat een overzichtelijke layout met visueel aantrekkelijke foto’s die jouw merk en boodschap ondersteunen. De website bevat een duidelijke Services sectie waarin je jouw diensten presenteert, een About sectie om meer over jezelf of je bedrijf te delen, en een eenvoudig Contactformulier voor bezoekers om in contact te komen. Dit pakket biedt een solide basis voor jouw online presentatie, met alles wat je nodig hebt om direct van start te gaan.",
+      "Het Basic Solution pakket biedt je een professionele one-page website, perfect voor een sterke en efficiënte online aanwezigheid. Dit pakket omvat een overzichtelijke layout met visueel aantrekkelijke foto’s die jouw merk en boodschap ondersteunen. De website bevat een duidelijke Services sectie waarin je jouw diensten presenteert, een About sectie om meer over jezelf of je bedrijf te delen, en een eenvoudig Contactformulier voor bezoekers om in contact te komen. Dit pakket biedt een solide basis voor jouw online presentatie, met alles wat je nodig hebt om direct van start te gaan.",
     includes: {
       website: "One Pager (Enkel een Home-Pagina)",
       mobile: "Mobielvriendelijk",
@@ -15,7 +15,7 @@ export const serviceItems = [
     },
     price:
       "De prijs voor het Basic Solution pakket start vanaf €300. Houd er rekening mee dat de prijs kan variëren afhankelijk van extra wensen, zoals aanpassingen in ontwerp, kleuren of andere specifieke verzoeken. Let op: de prijs is exclusief de kosten voor een domeinnaam. Neem contact met ons op voor een offerte op maat, afhankelijk van je specifieke wensen en aanpassingen.",
-    introPrice: "Vanaf €300",
+    introPrice: "Vanaf €200",
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ export const serviceItems = [
     },
     price:
       "De prijs voor het Advanced Solution pakket start vanaf €400. Houd er rekening mee dat de prijs kan variëren afhankelijk van extra wensen, zoals aanpassingen in ontwerp, kleuren of andere specifieke verzoeken. Let op: de prijs is exclusief de kosten voor een domeinnaam. Neem contact met ons op voor een offerte op maat, afhankelijk van je specifieke wensen en aanpassingen.",
-    introPrice: "Vanaf €400",
+    introPrice: "Vanaf €300",
   },
   {
     id: 3,
