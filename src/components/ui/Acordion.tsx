@@ -30,7 +30,7 @@ export default function Acordion() {
           </Accordion.Content>
         </Accordion.Panel>
         <Accordion.Panel>
-          <Accordion.Title>Wat is Privacy- & Coockiebeleid?</Accordion.Title>
+          <Accordion.Title>Wat is Privacy- & Cookiebeleid?</Accordion.Title>
           <Accordion.Content>
             <p className="mb-2 text-gray-500 dark:text-gray-400">
               Het privacy- en cookiebeleid is een document dat websites en apps gebruiken om uit te leggen hoe ze omgaan met de gegevens van hun

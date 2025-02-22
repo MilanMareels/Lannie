@@ -23,7 +23,7 @@ export const serviceItems = [
     title: "Advanced Solution",
     intro: "Een geavanceerde website met alle essentiële elementen voor online zichtbaarheid, inclusief meerdere pagina's.",
     description:
-      "Het Advanced Solution pakket biedt dezelfde solide basis als het Basic Web Solution pakket, maar met extra mogelijkheden voor een uitgebreidere en meer gedetailleerde online presentatie. Naast de Services sectie, krijg je de mogelijkheid om je diensten verder uit te lichten met meerdere foto’s en uitgebreide beschrijvingen, zodat bezoekers een beter inzicht krijgen in wat je aanbiedt. De website blijft overzichtelijk en gebruiksvriendelijk, met een professionele About sectie en een eenvoudig Contactformulier. Dit pakket is ideaal voor wie meer diepgang en visuele content wil toevoegen, zonder in te boeten op de gebruiksvriendelijkheid en snelheid van de website.",
+      "Het Advanced Solution pakket biedt dezelfde solide basis als het Basic Solution pakket, maar met extra mogelijkheden voor een uitgebreidere en meer gedetailleerde online presentatie. Naast de Services sectie, krijg je de mogelijkheid om je diensten verder uit te lichten met meerdere foto’s en uitgebreide beschrijvingen, zodat bezoekers een beter inzicht krijgen in wat je aanbiedt. De website blijft overzichtelijk en gebruiksvriendelijk, met een professionele About sectie en een eenvoudig Contactformulier. Dit pakket is ideaal voor wie meer diepgang en visuele content wil toevoegen, zonder in te boeten op de gebruiksvriendelijkheid en snelheid van de website.",
     includes: {
       website: "Multi Pager (Uitlichting diensten of producten)",
       mobile: "Mobielvriendelijk",
