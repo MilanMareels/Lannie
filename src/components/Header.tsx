@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header
       style={{
-        backgroundImage: `url('/bg.png')`,
+        backgroundImage: `url('/bg.jpg')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
