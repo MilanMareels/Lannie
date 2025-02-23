@@ -1,6 +1,6 @@
 export default function PrivacyPage() {
   return (
-    <div className="flex items-center justify-center py-8 px-4">
+    <div className="flex items-center justify-center py-8 px-4 wix">
       <div className="bg-white w-full max-w-screen-xl p-6 shadow-xl rounded-lg">
         <h1 className="text-3xl font-semibold text-center text-gray-800 mb-6">Privacy- en Policy</h1>
         <p className="text-sm text-gray-600 text-center mb-4">

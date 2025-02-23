@@ -7,7 +7,7 @@ export default function ServiceSection() {
   return (
     <section className="flex justify-center items-center flex-col" id="oplossingen">
       <section className="flex justify-center items-center flex-col gap-5 mt-20">
-        <h1 className="text-black text-3xl font-semibold">Onze Oplossingen</h1>
+        <h1 className="text-black text-3xl wix font-semibold">Onze Oplossingen</h1>
       </section>
       <section
         style={{

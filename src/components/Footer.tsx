@@ -11,39 +11,39 @@ export default function FooterSection() {
       <div className="w-full">
         <div className="grid w-full justify-center sm:flex sm:justify-between md:grid-cols-1">
           <div className="text-center">
-            <h1 className="archi text-black mb-5 md:mb-0">{companyName.toLocaleLowerCase()}</h1>
+            <h1 className="orbitron text-black mb-5 md:mb-0">{companyName}</h1>
           </div>
-          <div className="grid grid-cols-3 gap-4 sm:mt-4 sm:grid-cols-3 sm:gap-6">
+          <div className="grid grid-cols-3 gap-4 sm:mt-4 sm:grid-cols-3 sm:gap-6 wix">
             <div>
-              <Footer.Title title="Info" className="text-black" />
+              <Footer.Title title="Info" className="text-black wix" />
               <Footer.LinkGroup col>
-                <Footer.Link href="/" className="text-black">
+                <Footer.Link href="/" className="text-black wix">
                   1019.515.530
                 </Footer.Link>
-                <Footer.Link href="tel:0489503661" className="text-black">
+                <Footer.Link href="tel:0489503661" className="text-black wix">
                   0489503661
                 </Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>
-              <Footer.Title title="Volg Ons" className="text-black" />
+              <Footer.Title title="Volg Ons" className="text-black wix" />
               <Footer.LinkGroup col>
-                <Footer.Link href="https://www.linkedin.com/in/milan-mareels-58b472265/" target="blank" className="text-black">
+                <Footer.Link href="https://www.linkedin.com/in/milan-mareels-58b472265/" target="blank" className="text-black wix">
                   Linkedin
                 </Footer.Link>
                 <Footer.Link
                   href="https://www.instagram.com/lanniewebdesign?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                   target="blank"
-                  className="text-black"
+                  className="text-black wix"
                 >
                   Instagram
                 </Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>
-              <Footer.Title title="Legal" className="text-black" />
+              <Footer.Title title="Legal" className="text-black wix" />
               <Footer.LinkGroup col>
-                <Footer.Link href="/privacy" className="text-black">
+                <Footer.Link href="/privacy" className="text-black wix">
                   Privacy Policy
                 </Footer.Link>
               </Footer.LinkGroup>
@@ -52,7 +52,7 @@ export default function FooterSection() {
         </div>
         <Footer.Divider />
         <div className="w-full sm:flex sm:items-center sm:justify-between text-center sm:text-left">
-          <Footer.Copyright href="#" by={`${companyName}. All Rights Reserved.`} year={new Date().getFullYear()} className="text-black" />
+          <Footer.Copyright href="#" by={`${companyName}. All Rights Reserved.`} year={new Date().getFullYear()} className="text-black wix" />
           <div className="mt-4 flex justify-center space-x-6 sm:mt-0">
             <Footer.Icon href="https://www.linkedin.com/in/milan-mareels-58b472265/" target="blank" icon={BsLinkedin} className="text-black" />
             <Footer.Icon

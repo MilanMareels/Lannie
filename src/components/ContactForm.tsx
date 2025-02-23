@@ -39,7 +39,7 @@ export default function ContactForm() {
 
   return (
     <div
-      className="flex items-center justify-center bg-gray-100 rounded-md max-w-[1500px] m-auto mt-20 mb-20 p-5 flex-wrap gap-5 md:gap-0"
+      className="flex items-center justify-center bg-gray-100 rounded-md max-w-[1500px] m-auto mt-20 mb-20 p-5 flex-wrap gap-5 md:gap-0 wix"
       id="contact"
     >
       <div className="w-[100%] md:w-[50%]">

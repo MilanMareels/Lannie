@@ -3,12 +3,21 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: archi;
-  src: url(/VanDoesburgArchiType Regular.ttf);
+  font-family: orbitron;
+  src: url(/Orbitron-SemiBold.ttf);
 }
 
-.archi {
-  font-family: archi;
+.orbitron {
+  font-family: orbitron;
+}
+
+@font-face {
+  font-family: wix;
+  src: url(/WixMadeforDisplay-VariableFont_wght.ttf);
+}
+
+.wix {
+  font-family: wix;
 }
 
 html {

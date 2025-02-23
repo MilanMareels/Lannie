@@ -7,7 +7,7 @@ interface IncludesProps {
 
 export default function Includes({ service }: IncludesProps) {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 wix">
       <p className="group-hover:text-white font-semibold">Inbegrepen</p>
       <div className="flex gap-1 items-center">
         <CheckIcon />

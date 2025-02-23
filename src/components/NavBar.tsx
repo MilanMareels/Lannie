@@ -29,17 +29,17 @@ export default function NavBarSection() {
       <Navbar fluid rounded theme={customTheme} className="p-4 w-[1200px] shadow-lg">
         <Navbar.Brand href="/">
           <img src="/Logo-lannie.png" className="mr-3 h-6 sm:h-9 rounded" alt="webdesign in Merksem" loading="lazy" />
-          <span className="text-xl font-bold">{companyName.toLocaleUpperCase()}</span>
+          <span className="text-xl orbitron">{companyName}</span>
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse>
-          <Navbar.Link href="/" className="text-lg">
+          <Navbar.Link href="/" className="text-lg wix">
             Startpagina
           </Navbar.Link>
-          <Navbar.Link href="/#oplossingen" className="text-lg">
+          <Navbar.Link href="/#oplossingen" className="text-lg wix">
             Oplossingen
           </Navbar.Link>
-          <Navbar.Link href="/#contact" className="text-lg">
+          <Navbar.Link href="/#contact" className="text-lg wix">
             Contact
           </Navbar.Link>
         </Navbar.Collapse>

@@ -26,7 +26,7 @@ export default function ServiceDetails() {
     <div>
       <div className="flex flex-col w-full md:w-[60%] m-auto">
         <HR />
-        <div className="w-full pb-4 sm:pb-0 pl-4">
+        <div className="w-full pb-4 sm:pb-0 pl-4 wix">
           <h1 className="text-2xl font-bold text-black">{service.title}</h1>
           <p className="mt-2 mr-4 text-black">{service.description}</p>
         </div>
@@ -40,7 +40,7 @@ export default function ServiceDetails() {
         </section>
         <HR />
         <section className="flex flex-col sm:flex-row w-full pl-4">
-          <div className="w-full pt-4 sm:pt-0">
+          <div className="w-full pt-4 sm:pt-0 wix">
             <h1 className="text-xl font-bold text-black">Prijs</h1>
             <p className="mt-2 mr-4 text-black">{service.price}</p>
           </div>
