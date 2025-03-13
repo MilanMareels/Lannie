@@ -21,7 +21,7 @@ export default function FooterSection() {
                   1019.515.530
                 </Footer.Link>
                 <Footer.Link href="tel:0489503661" className="text-black wix">
-                  0489503661
+                  TEL: 0489503661
                 </Footer.Link>
               </Footer.LinkGroup>
             </div>
@@ -31,11 +31,7 @@ export default function FooterSection() {
                 <Footer.Link href="https://www.linkedin.com/in/milan-mareels-58b472265/" target="blank" className="text-black wix">
                   Linkedin
                 </Footer.Link>
-                <Footer.Link
-                  href="https://www.instagram.com/lanniewebdesign?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                  target="blank"
-                  className="text-black wix"
-                >
+                <Footer.Link href="https://www.instagram.com/lanniewebdesign?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="blank" className="text-black wix">
                   Instagram
                 </Footer.Link>
               </Footer.LinkGroup>
@@ -55,12 +51,7 @@ export default function FooterSection() {
           <Footer.Copyright href="#" by={`${companyName}. All Rights Reserved.`} year={new Date().getFullYear()} className="text-black wix" />
           <div className="mt-4 flex justify-center space-x-6 sm:mt-0">
             <Footer.Icon href="https://www.linkedin.com/in/milan-mareels-58b472265/" target="blank" icon={BsLinkedin} className="text-black" />
-            <Footer.Icon
-              href="https://www.instagram.com/lanniewebdesign?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-              target="blank"
-              icon={BsInstagram}
-              className="text-black"
-            />
+            <Footer.Icon href="https://www.instagram.com/lanniewebdesign?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="blank" icon={BsInstagram} className="text-black" />
           </div>
         </div>
       </div>
