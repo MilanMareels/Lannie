@@ -8,21 +8,12 @@ const SEO = () => {
     <>
       {/* SEO - Meta Tags */}
       <Helmet>
-        <meta
-          name="description"
-          content="Op zoek naar webdesign in Merksem? Wij maken professionele en betaalbare websites. Contacteer ons vandaag!"
-        />
-        <meta
-          name="keywords"
-          content="webdesign, Merksem, website laten maken, website, website in Merksem, webdesign in Merksem, webdesign Merksem"
-        />
+        <meta name="description" content="Op zoek naar webdesign in Merksem? Wij maken professionele en betaalbare websites. Contacteer ons vandaag!" />
+        <meta name="keywords" content="webdesign, Merksem, website laten maken, website, website in Merksem, webdesign in merksem, webdesign merksem" />
 
         {/* Open Graph (Facebook, WhatsApp, LinkedIn) */}
         <meta property="og:title" content="Lannie" />
-        <meta
-          property="og:description"
-          content="Op zoek naar webdesign in Merksem? Wij maken professionele en betaalbare websites. Contacteer ons vandaag!"
-        />
+        <meta property="og:description" content="Op zoek naar webdesign in Merksem? Wij maken professionele en betaalbare websites. Contacteer ons vandaag!" />
         <meta property="og:image" content="/Logo-lannie.png" />
         <meta property="og:url" content="https://www.lannie.be" />
         <meta property="og:type" content="website" />
@@ -30,10 +21,7 @@ const SEO = () => {
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Lannie" />
-        <meta
-          name="twitter:description"
-          content="Op zoek naar webdesign in Merksem? Wij maken professionele en betaalbare websites. Contacteer ons vandaag!"
-        />
+        <meta name="twitter:description" content="Op zoek naar webdesign in Merksem? Wij maken professionele en betaalbare websites. Contacteer ons vandaag!" />
         <meta name="twitter:image" content="/Logo-lannie.png" />
       </Helmet>
 
