@@ -4,6 +4,7 @@ import Swal from "sweetalert2";
 export default function ContactForm() {
   const [result, setResult] = useState("");
   const [accept, setAccept] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(false);
 
   const subject: string = "Nieuw bericht van de klant";
   const companyName: string = import.meta.env.VITE_COMPANY_NAME!;
@@ -11,6 +12,8 @@ export default function ContactForm() {
 
   const onSubmit = async (event: any) => {
     event.preventDefault();
+
+    setLoading(true);
 
     const formData = new FormData(event.target);
 
@@ -32,16 +35,14 @@ export default function ContactForm() {
         confirmButtonColor: "black",
       });
       event.target.reset();
+      setLoading(false);
     } else {
       setResult(data.message);
     }
   };
 
   return (
-    <div
-      className="flex items-center justify-center bg-gray-100 rounded-md max-w-[1500px] m-auto mt-20 mb-20 p-5 flex-wrap gap-5 md:gap-0 wix"
-      id="contact"
-    >
+    <div className="flex items-center justify-center bg-gray-100 rounded-md max-w-[1500px] m-auto mt-20 mb-20 p-5 flex-wrap gap-5 md:gap-0 wix" id="contact">
       <div className="w-[100%] md:w-[50%]">
         <h1 className="text-5xl w-[80%]">Klaar om online te gaan? Neem contact met ons op voor jouw nieuwe website, portfolio of meer!</h1>
       </div>
@@ -71,14 +72,7 @@ export default function ContactForm() {
           </div>
 
           <div className="flex items-center mt-4">
-            <input
-              type="checkbox"
-              id="acceptTerms"
-              name="acceptTerms"
-              required
-              className="mr-2 rounded w-[20px] h-[20px]"
-              onClick={() => setAccept((prev) => !prev)}
-            />
+            <input type="checkbox" id="acceptTerms" name="acceptTerms" required className="mr-2 rounded w-[20px] h-[20px]" onClick={() => setAccept((prev) => !prev)} />
             <label htmlFor="acceptTerms" className="text-white">
               Ik ga akkoord met de{" "}
               <a href="/privacy" className="underline text-[#084B65]">
@@ -89,7 +83,15 @@ export default function ContactForm() {
           </div>
 
           <div className="text-center">
-            <input type="submit" value="Bericht verzenden" className="w-full bg-[#084B65] rounded text-white p-3 cursor-pointer" />
+            {loading === true ? (
+              <div className="flex flex-row gap-2 items-center justify-center w-full bg-[#084B65] rounded p-5">
+                <div className="w-2 h-2 rounded-full bg-white animate-bounce"></div>
+                <div className="w-2 h-2 rounded-full bg-white animate-bounce [animation-delay:-.3s]"></div>
+                <div className="w-2 h-2 rounded-full bg-white animate-bounce [animation-delay:-.5s]"></div>
+              </div>
+            ) : (
+              <input type="submit" value="Bericht verzenden" className="w-full bg-[#084B65] rounded text-white p-3 cursor-pointer" />
+            )}
           </div>
         </form>
       </div>
