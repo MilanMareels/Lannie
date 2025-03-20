@@ -14,8 +14,8 @@ export const serviceItems = [
       hosting: "Online webhosting",
     },
     price:
-      "De prijs voor het Basic Solution pakket start vanaf €300. Houd er rekening mee dat de prijs kan variëren afhankelijk van extra wensen, zoals aanpassingen in ontwerp, kleuren of andere specifieke verzoeken. Let op: de prijs is exclusief de kosten voor een domeinnaam. Neem contact met ons op voor een offerte op maat, afhankelijk van je specifieke wensen en aanpassingen.",
-    introPrice: "Vanaf €300",
+      "De prijs voor het Basic Solution pakket start vanaf €299. Houd er rekening mee dat de prijs kan variëren afhankelijk van extra wensen, zoals aanpassingen in ontwerp, kleuren of andere specifieke verzoeken. Let op: de prijs is exclusief de kosten voor een domeinnaam. Neem contact met ons op voor een offerte op maat, afhankelijk van je specifieke wensen en aanpassingen.",
+    introPrice: "Vanaf €299",
   },
   {
     id: 2,
@@ -32,8 +32,8 @@ export const serviceItems = [
       hosting: "Online webhosting",
     },
     price:
-      "De prijs voor het Advanced Solution pakket start vanaf €400. Houd er rekening mee dat de prijs kan variëren afhankelijk van extra wensen, zoals aanpassingen in ontwerp, kleuren of andere specifieke verzoeken. Let op: de prijs is exclusief de kosten voor een domeinnaam. Neem contact met ons op voor een offerte op maat, afhankelijk van je specifieke wensen en aanpassingen.",
-    introPrice: "Vanaf €400",
+      "De prijs voor het Advanced Solution pakket start vanaf €399. Houd er rekening mee dat de prijs kan variëren afhankelijk van extra wensen, zoals aanpassingen in ontwerp, kleuren of andere specifieke verzoeken. Let op: de prijs is exclusief de kosten voor een domeinnaam. Neem contact met ons op voor een offerte op maat, afhankelijk van je specifieke wensen en aanpassingen.",
+    introPrice: "Vanaf €399",
   },
   {
     id: 3,
