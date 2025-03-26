@@ -1,31 +1,50 @@
-import React from "react";
 import { Helmet } from "react-helmet";
 import { JsonLd } from "react-schemaorg";
 import { ContactPoint, LocalBusiness, Service } from "schema-dts";
 
-const SEO = () => {
+export interface SEOProps {
+  title: string;
+  description: string;
+  keywords: string;
+  canonicalUrl: string;
+  ogTitle: string;
+  ogDescription: string;
+  ogImage: string;
+  ogType: string;
+  twitterTitle: string;
+  twitterDescription: string;
+  twitterImage: string;
+}
+
+const SEO = ({ description, keywords, title, canonicalUrl, ogTitle, ogDescription, ogImage, ogType, twitterTitle, twitterDescription, twitterImage }: SEOProps) => {
   return (
     <>
       {/* SEO - Meta Tags */}
       <Helmet>
-        <meta name="description" content="Op zoek naar webdesign in Merksem? Wij maken professionele en betaalbare websites. Contacteer ons vandaag!" />
-        <meta name="keywords" content="webdesign, Merksem, website laten maken, website, website in Merksem, webdesign in merksem, webdesign merksem" />
-
-        {/* Open Graph (Facebook, WhatsApp, LinkedIn) */}
-        <meta property="og:title" content="Lannie" />
-        <meta property="og:description" content="Op zoek naar webdesign in Merksem? Wij maken professionele en betaalbare websites. Contacteer ons vandaag!" />
-        <meta property="og:image" content="/Logo-lannie.png" />
-        <meta property="og:url" content="https://www.lannie.be" />
-        <meta property="og:type" content="website" />
-
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta name="keywords" content={keywords} />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="X-Robots-Tag" content="index, follow, max-image-preview:large" />
+        <link rel="canonical" href={canonicalUrl} />
+        {/* Open Graph */}
+        <meta property="og:title" content={ogTitle} />
+        <meta property="og:description" content={ogDescription} />
+        <meta property="og:image" content={ogImage} />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:type" content={ogType} />
+        <meta property="og:locale" content="nl_BE" />
+        <meta property="og:site_name" content="Lannie Webdesign" />
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Lannie" />
-        <meta name="twitter:description" content="Op zoek naar webdesign in Merksem? Wij maken professionele en betaalbare websites. Contacteer ons vandaag!" />
-        <meta name="twitter:image" content="/Logo-lannie.png" />
+        <meta name="twitter:title" content={twitterTitle} />
+        <meta name="twitter:description" content={twitterDescription} />
+        <meta name="twitter:image" content={twitterImage} />
+        <meta name="twitter:site" content="LannieWebdesign" />
       </Helmet>
 
       {/* Structured Data - Bedrijfsinformatie */}
+
       <JsonLd<LocalBusiness>
         item={{
           "@context": "https://schema.org",

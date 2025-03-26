@@ -1,5 +1,5 @@
 export const routerEnum = {
   PAGE: "/",
-  SERVICE_DETAILS: "/services/:id",
+  SERVICE_DETAILS: "/oplossingen/:name",
   PRIVACY: "/privacy",
 };

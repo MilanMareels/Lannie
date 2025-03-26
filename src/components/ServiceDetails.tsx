@@ -3,10 +3,12 @@ import ContactForm from "./ContactForm";
 import { useParams } from "react-router-dom";
 import { serviceItems } from "../data/serviceItems";
 import { useEffect } from "react";
+import SEO from "./SEO/SEO";
+import { SEOContent } from "../data/SEO/SEO";
 
 export default function ServiceDetails() {
-  const { id } = useParams();
-  const service = serviceItems.find((item) => item.id === parseInt(id!))!;
+  const { name } = useParams();
+  const service = serviceItems.find((item) => item.name === name)!;
 
   const customTheme: CustomFlowbiteTheme["carousel"] = {
     scrollContainer: {
@@ -24,6 +26,13 @@ export default function ServiceDetails() {
 
   return (
     <div>
+      <SEO
+        {...SEOContent.serviceDetails}
+        title={`${service.title} - Webdesign Merksem - Lannie`}
+        canonicalUrl={`https://www.lannie.be/oplossingen/${service.name}`}
+        description={service.SEODescription}
+        keywords={service.keywords}
+      />
       <div className="flex flex-col w-full md:w-[60%] m-auto">
         <HR />
         <div className="w-full pb-4 sm:pb-0 pl-4 wix">

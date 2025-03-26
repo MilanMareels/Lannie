@@ -21,7 +21,7 @@ export default function ServiceSection() {
       >
         <section className="flex gap-5 p-5 flex-wrap justify-center">
           {serviceItems.map((service) => (
-            <Link key={service.id} to={`/services/${service.id}`}>
+            <Link key={service.id} to={`/oplossingen/${service.name}`}>
               <Card service={service as unknown as Service} />
             </Link>
           ))}
