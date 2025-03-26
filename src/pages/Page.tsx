@@ -8,7 +8,6 @@ import SEO from "../components/SEO/SEO";
 import { SEOContent } from "../data/SEO/SEO";
 
 export default function Page() {
-  const GI_ID: string = import.meta.env.VITE_GOOGLE_ANA!;
   const [cookies] = useCookies(["cookieContent"]);
 
   return (
