@@ -51,7 +51,7 @@ export default function FooterSection() {
           <Footer.Copyright href="#" by={`${companyName}. All Rights Reserved.`} year={new Date().getFullYear()} className="text-black wix" />
           <div className="mt-4 flex justify-center space-x-6 sm:mt-0">
             <Footer.Icon href="https://www.linkedin.com/in/milan-mareels-58b472265/" target="blank" icon={BsLinkedin} className="text-black" />
-            <Footer.Icon href="https://www.instagram.com/lanniewebdesign?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="blank" icon={BsInstagram} className="text-black" />
+            <Footer.Icon href="https://www.instagram.com/lannie.be/" target="blank" icon={BsInstagram} className="text-black" />
           </div>
         </div>
       </div>
