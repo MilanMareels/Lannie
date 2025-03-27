@@ -31,7 +31,7 @@ export default function FooterSection() {
                 <Footer.Link href="https://www.linkedin.com/in/milan-mareels-58b472265/" target="blank" className="text-black wix">
                   Linkedin
                 </Footer.Link>
-                <Footer.Link href="https://www.instagram.com/lanniewebdesign?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="blank" className="text-black wix">
+                <Footer.Link href="https://www.instagram.com/lannie.be/" target="blank" className="text-black wix">
                   Instagram
                 </Footer.Link>
               </Footer.LinkGroup>
