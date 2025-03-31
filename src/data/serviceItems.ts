@@ -36,7 +36,7 @@ export const serviceItems = [
     name: "website-renewal",
     intro: "Een vernieuwde versie van uw bestaande website, met behoud van alle essentiële elementen en een frisse, moderne uitstraling.",
     description:
-      "Het Website Vernieuwingspakket biedt een naadloze overgang naar een moderne, goed functionerende website. Dit pakket behoudt de kern van je oude website, maar zorgt voor verbeteringen op het gebied van design, prestaties en gebruiksvriendelijkheid. Zo blijft je online aanwezigheid optimaal, zonder verlies van inhoud of functionaliteit.",
+      "Het Website Vernieuwings pakket biedt een naadloze overgang naar een moderne, goed functionerende website. Dit pakket behoudt de kern van je oude website, maar zorgt voor verbeteringen op het gebied van design, prestaties en gebruiksvriendelijkheid. Zo blijft je online aanwezigheid optimaal, zonder verlies van inhoud of functionaliteit.",
     price:
       "De prijs voor Website Renewal is op maat en afhankelijk van de specifieke wensen van de klant. Houd er rekening mee dat de prijs kan variëren op basis van aanpassingen in ontwerp, functionaliteiten of andere specifieke verzoeken. Let op: de klant beschikt al over een domeinnaam. Neem contact met ons op voor een offerte op maat, afgestemd op jouw specifieke wensen en behoeften.",
     introPrice: "Prijs op maat",
