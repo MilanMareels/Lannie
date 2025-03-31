@@ -4,15 +4,7 @@ export interface Service {
   title: string;
   intro: string;
   description: string;
-  includes: Includes;
+  includes: string[];
   price: string;
   introPrice: string;
-}
-
-interface Includes {
-  website: string;
-  mobile: string;
-  ontwerp: string;
-  gdpr: string;
-  hosting: string;
 }
