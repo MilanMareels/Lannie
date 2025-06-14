@@ -8,8 +8,8 @@ export const serviceItems = [
     description:
       "Het Basic Solution pakket biedt je een professionele one-page website, perfect voor een sterke en efficiënte online aanwezigheid. Dit pakket omvat een overzichtelijke layout met visueel aantrekkelijke foto’s die jouw merk en boodschap ondersteunen. De website bevat een duidelijke Services sectie waarin je jouw diensten presenteert, een About sectie om meer over jezelf of je bedrijf te delen, en een eenvoudig Contactformulier voor bezoekers om in contact te komen. Dit pakket biedt een solide basis voor jouw online presentatie, met alles wat je nodig hebt om direct van start te gaan.",
     price:
-      "De prijs voor het Basic Solution pakket start vanaf €299. Houd er rekening mee dat de prijs kan variëren afhankelijk van extra wensen, zoals aanpassingen in ontwerp, kleuren of andere specifieke verzoeken. Let op: de prijs is exclusief de kosten voor een domeinnaam. Neem contact met ons op voor een offerte op maat, afhankelijk van je specifieke wensen en aanpassingen.",
-    introPrice: "Vanaf €299",
+      "De prijs voor het Basic Solution pakket start vanaf €199. Houd er rekening mee dat de prijs kan variëren afhankelijk van extra wensen, zoals aanpassingen in ontwerp, kleuren of andere specifieke verzoeken. Let op: de prijs is exclusief de kosten voor een domeinnaam. Neem contact met ons op voor een offerte op maat, afhankelijk van je specifieke wensen en aanpassingen.",
+    introPrice: "Vanaf €199",
     includes: ["One Pager (Enkel een Home-Pagina)", "Mobielvriendelijk", "Op basis van een template", "Basis Privacy- & Cookiebeleid", "Online webhosting", "Basis-SEO"],
     SEODescription: "Standaard one-page website voor Merksem. Toont diensten, over ons en contact - alles in één overzichtelijke layout.",
     keywords: "one-page website Merksem, basic webdesign pakket, goedkope website Merksem, starter website laten maken",
@@ -23,8 +23,8 @@ export const serviceItems = [
     description:
       "Het Advanced Solution pakket biedt dezelfde solide basis als het Basic Solution pakket, maar met extra mogelijkheden voor een uitgebreidere en meer gedetailleerde online presentatie. Naast de Services sectie, krijg je de mogelijkheid om je diensten verder uit te lichten met meerdere foto’s en uitgebreide beschrijvingen, zodat bezoekers een beter inzicht krijgen in wat je aanbiedt. De website blijft overzichtelijk en gebruiksvriendelijk, met een professionele About sectie en een eenvoudig Contactformulier. Dit pakket is ideaal voor wie meer diepgang en visuele content wil toevoegen, zonder in te boeten op de gebruiksvriendelijkheid en snelheid van de website.",
     price:
-      "De prijs voor het Advanced Solution pakket start vanaf €399. Houd er rekening mee dat de prijs kan variëren afhankelijk van extra wensen, zoals aanpassingen in ontwerp, kleuren of andere specifieke verzoeken. Let op: de prijs is exclusief de kosten voor een domeinnaam. Neem contact met ons op voor een offerte op maat, afhankelijk van je specifieke wensen en aanpassingen.",
-    introPrice: "Vanaf €399",
+      "De prijs voor het Advanced Solution pakket start vanaf €299. Houd er rekening mee dat de prijs kan variëren afhankelijk van extra wensen, zoals aanpassingen in ontwerp, kleuren of andere specifieke verzoeken. Let op: de prijs is exclusief de kosten voor een domeinnaam. Neem contact met ons op voor een offerte op maat, afhankelijk van je specifieke wensen en aanpassingen.",
+    introPrice: "Vanaf €299",
     includes: ["Multi Pager (Uitlichting diensten of producten)", "Mobielvriendelijk", "Op basis van een template", "Basis Privacy- & Cookiebeleid", "Online webhosting", "Uitgebreide-SEO"],
     SEODescription: "Uitgebreide website met diepgaande dienstensecties, meerdere foto's en professionele content. Perfect voor ondernemers die meer willen tonen!",
     keywords: "uitgebreide website, professionele dienstensecties, premium website Merksem, business website op maat",
