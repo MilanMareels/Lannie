@@ -48,7 +48,7 @@ export default function FooterSection() {
         </div>
         <Footer.Divider />
         <div className="w-full sm:flex sm:items-center sm:justify-between text-center sm:text-left">
-          <Footer.Copyright href="#" by={`${companyName}. All Rights Reserved.`} year={new Date().getFullYear()} className="text-black wix" />
+          <Footer.Copyright href="#" by={`${companyName}. Ontworpen en ontwikkeld door Lannie`} year={new Date().getFullYear()} className="text-black wix" />
           <div className="mt-4 flex justify-center space-x-6 sm:mt-0">
             <Footer.Icon href="https://www.linkedin.com/in/milan-mareels-58b472265/" target="blank" icon={BsLinkedin} className="text-black" />
             <Footer.Icon href="https://www.instagram.com/lanniewebdesign/" target="blank" icon={BsInstagram} className="text-black" />
