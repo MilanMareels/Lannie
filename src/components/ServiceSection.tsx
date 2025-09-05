@@ -19,7 +19,7 @@ export default function ServiceSection() {
         }}
         className="relative rounded-none md:rounded-xl mt-6 max-w-[1500px] w-full flex items-end justify-center"
       >
-        <section className="flex gap-5 p-5 flex-wrap justify-center">
+        <section className="flex gap-5 pt-5 pb-5 flex-wrap justify-center">
           {serviceItems.map((service) => (
             <Link key={service.id} to={`/oplossingen/${service.name}`}>
               <Card service={service as unknown as Service} />
