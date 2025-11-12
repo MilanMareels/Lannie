@@ -33,7 +33,7 @@ export default function ContactForm() {
         title: "Succes!",
         text: "E-mail succesvol verzonden!",
         icon: "success",
-        confirmButtonColor: "black",
+        confirmButtonColor: "#259D84",
       });
       event.target.reset();
       setLoading(false);
@@ -48,7 +48,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-white scroll-fade-in">
+    <section id="contact" className="py-24 bg-white scroll-fade-in wix">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-20 scroll-fade-in animate-in">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Neem Contact Op</h2>
@@ -73,7 +73,7 @@ export default function ContactForm() {
                     id="first-name"
                     name="name"
                     required
-                    className="w-full px-4 py-4 bg-white border border-gray-200 rounded-xl text-gray-900 placeholder-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all duration-200 text-sm"
+                    className="w-full px-4 py-4 bg-white border border-gray-200 rounded-xl text-gray-900 placeholder-gray-500 focus:border-[#259D84] focus:ring-2 focus:ring-[#259D84] transition-all duration-200 text-sm"
                     placeholder="Uw voornaam"
                   />
                 </div>
@@ -87,7 +87,7 @@ export default function ContactForm() {
                     id="last-name"
                     name="lastName"
                     required
-                    className="w-full px-4 py-4 bg-white border border-gray-200 rounded-xl text-gray-900 placeholder-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all duration-200 text-sm"
+                    className="w-full px-4 py-4 bg-white border border-gray-200 rounded-xl text-gray-900 placeholder-gray-500 focus:border-[#259D84] focus:ring-2 focus:ring-[#259D84] transition-all duration-200 text-sm"
                     placeholder="Uw achternaam"
                   />
                 </div>
@@ -102,7 +102,7 @@ export default function ContactForm() {
                   id="email"
                   name="email"
                   required
-                  className="w-full px-4 py-4 bg-white border border-gray-200 rounded-xl text-gray-900 placeholder-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all duration-200 text-sm"
+                  className="w-full px-4 py-4 bg-white border border-gray-200 rounded-xl text-gray-900 placeholder-gray-500 focus:border-[#259D84] focus:ring-2 focus:ring-[#259D84] ransition-all duration-200 text-sm"
                   placeholder="uw.email@example.com"
                 />
               </div>
@@ -115,7 +115,7 @@ export default function ContactForm() {
                   type="tel"
                   id="phone"
                   name="phone"
-                  className="w-full px-4 py-4 bg-white border border-gray-200 rounded-xl text-gray-900 placeholder-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all duration-200 text-sm"
+                  className="w-full px-4 py-4 bg-white border border-gray-200 rounded-xl text-gray-900 placeholder-gray-500 focus:border-[#259D84] focus:ring-2 focus:ring-[#259D84] transition-all duration-200 text-sm"
                   placeholder="+32 6 12345678"
                 />
               </div>
@@ -128,7 +128,7 @@ export default function ContactForm() {
                   type="text"
                   id="company"
                   name="company"
-                  className="w-full px-4 py-4 bg-white border border-gray-200 rounded-xl text-gray-900 placeholder-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all duration-200 text-sm"
+                  className="w-full px-4 py-4 bg-white border border-gray-200 rounded-xl text-gray-900 placeholder-gray-500 focus:border-[#259D84] focus:ring-2 focus:ring-[#259D84] transition-all duration-200 text-sm"
                   placeholder="Uw bedrijfsnaam"
                 />
               </div>
@@ -140,7 +140,7 @@ export default function ContactForm() {
                 <select
                   id="package"
                   name="package"
-                  className="w-full px-4 py-4 bg-white border border-gray-200 rounded-xl text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all duration-200 text-sm"
+                  className="w-full px-4 py-4 bg-white border border-gray-200 rounded-xl text-gray-900 focus:border-[#259D84] focus:ring-2 focus:ring-[#259D84] transition-all duration-200 text-sm"
                 >
                   <option value="">Selecteer een pakket</option>
                   <option value="basic">Basic Pakket - €199</option>
@@ -160,7 +160,7 @@ export default function ContactForm() {
                   rows={6}
                   maxLength={500}
                   onChange={handleMessageChange}
-                  className="w-full px-4 py-4 bg-white border border-gray-200 rounded-xl text-gray-900 placeholder-gray-500 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all duration-200 text-sm resize-none"
+                  className="w-full px-4 py-4 bg-white border border-gray-200 rounded-xl text-gray-900 placeholder-gray-500 focus:border-[#259D84] focus:ring-2 focus:ring-[#259D84] transition-all duration-200 text-sm resize-none"
                   placeholder="Vertel ons over uw project, wensen en doelen..."
                 ></textarea>
                 <div className="text-right mt-2">
@@ -176,12 +176,12 @@ export default function ContactForm() {
                   id="acceptTerms"
                   name="acceptTerms"
                   required
-                  className="mr-3 w-5 h-5 text-blue-600 bg-white border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+                  className="mr-3 w-5 h-5 text-[#259D84] bg-white border-gray-300 rounded focus:ring-[#259D84] focus:ring-2"
                   onClick={() => setAccept((prev) => !prev)}
                 />
                 <label htmlFor="acceptTerms" className="text-gray-700 text-sm">
                   Ik ga akkoord met de{" "}
-                  <a href="/privacy" className="text-blue-600 hover:text-blue-800 underline">
+                  <a href="/privacy" className="text-[#259D84] underline">
                     voorwaarden
                   </a>{" "}
                   en begrijp dat ik het bericht niet kan verzenden zonder mijn toestemming.
@@ -190,7 +190,7 @@ export default function ContactForm() {
 
               <div className="text-center">
                 {loading ? (
-                  <div className="flex flex-row gap-2 items-center justify-center w-full bg-blue-600 rounded-xl p-4">
+                  <div className="flex flex-row gap-2 items-center justify-center w-full bg-[#259D84] rounded-xl p-6">
                     <div className="w-2 h-2 rounded-full bg-white animate-bounce"></div>
                     <div className="w-2 h-2 rounded-full bg-white animate-bounce [animation-delay:-.3s]"></div>
                     <div className="w-2 h-2 rounded-full bg-white animate-bounce [animation-delay:-.5s]"></div>
@@ -198,7 +198,7 @@ export default function ContactForm() {
                 ) : (
                   <button
                     type="submit"
-                    className="rounded-button whitespace-nowrap bg-blue-600 hover:bg-blue-700 text-white px-12 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105 cursor-pointer w-full"
+                    className="rounded-button whitespace-nowrap bg-[#259D84] text-white px-12 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105 cursor-pointer w-full"
                   >
                     <i className="fa fa-paper-plane mr-2"></i>
                     Verstuur bericht

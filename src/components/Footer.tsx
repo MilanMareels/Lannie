@@ -1,4 +1,5 @@
 import { CustomFlowbiteTheme, Footer } from "flowbite-react";
+import { PopupButton } from "react-calendly";
 import { BsInstagram, BsLinkedin } from "react-icons/bs";
 
 export default function FooterSection() {
@@ -13,12 +14,17 @@ export default function FooterSection() {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Klaar om te beginnen?</h2>
           <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">Laat ons uw visie omzetten in een prachtige, functionele website. Neem vandaag nog contact op voor een vrijblijvend gesprek.</p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <button className="rounded-button whitespace-nowrap bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105 cursor-pointer">
-              Start nu
-            </button>
-            <button className="rounded-button whitespace-nowrap border-2 border-white text-white hover:bg-white hover:text-gray-900 px-10 py-4 text-lg font-semibold transition-all duration-300 cursor-pointer">
-              Neem contact op
-            </button>
+            <PopupButton
+              url="https://calendly.com/lanniewebdesign/30min"
+              className="rounded-button whitespace-nowrap bg-[#259D84] text-white px-10 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105 cursor-pointer"
+              rootElement={document.getElementById("root")}
+              text="Start nu"
+            />
+            <a href="#contact">
+              <button className="rounded-button whitespace-nowrap border-2 border-white text-white hover:bg-white hover:text-gray-900 px-10 py-4 text-lg font-semibold transition-all duration-300 cursor-pointer">
+                Neem contact op
+              </button>
+            </a>
           </div>
         </div>
       </section>

@@ -1,5 +1,3 @@
-import NavBarSection from "./NavBar";
-
 export default function Header() {
   return (
     <>
@@ -7,7 +5,7 @@ export default function Header() {
         id="home"
         className="relative min-h-screen overflow-hidden"
         style={{
-          backgroundImage: `url("https://readdy.ai/api/search-image?query=sophisticated%20modern%20office%20workspace%20with%20sleek%20laptop%20displaying%20website%20code%20elegant%20lighting%20professional%20atmosphere%20clean%20white%20desk%20minimal%20setup%20luxury%20tech%20environment&width=1440&height=1024&seq=hero-bg-002&orientation=landscape")`,
+          backgroundImage: `url("hero.webp")`,
           backgroundSize: "cover",
           backgroundPosition: "center center",
           backgroundAttachment: "fixed",
@@ -29,30 +27,26 @@ export default function Header() {
               <div className="hero-content">
                 <h1 className="hero-title text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
                   Websites die
-                  <span className="text-blue-600 block hero-highlight">vooroplopen</span>
+                  <span className="text-[#259D84] block hero-highlight">vooroplopen</span>
                 </h1>
                 <p className="hero-subtitle text-xl md:text-2xl text-gray-700 mb-12 leading-relaxed max-w-2xl">
                   Moderne, krachtige websites die uw bedrijf naar het volgende niveau tillen. Van concept tot conversie.
                 </p>
                 <div className="hero-cta flex flex-col sm:flex-row gap-4">
-                  <button className="rounded-button whitespace-nowrap bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 text-lg font-semibold transition-all duration-500 transform hover:scale-105 hover:shadow-2xl cursor-pointer">
-                    Ontdek onze pakketten
-                  </button>
-                  <button className="rounded-button whitespace-nowrap border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white px-10 py-4 text-lg font-semibold transition-all duration-300 cursor-pointer">
-                    Bekijk portfolio
-                  </button>
+                  <a href="#oplossingen">
+                    <button className="rounded-button whitespace-nowrap bg-[#259D84] text-white px-10 py-4 text-lg font-semibold transition-all duration-500 transform hover:scale-105 hover:shadow-2xl cursor-pointer">
+                      Ontdek onze pakketten
+                    </button>
+                  </a>
+                  <a href="#portfolio">
+                    <button className="rounded-button whitespace-nowrap border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white px-10 py-4 text-lg font-semibold transition-all duration-300 cursor-pointer">
+                      Bekijk portfolio
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 scroll-indicator">
-          <div className="w-6 h-12 border-2 border-gray-400 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-gray-400 rounded-full mt-2 scroll-dot"></div>
-          </div>
-          <p className="text-sm text-gray-500 mt-2">Scroll</p>
         </div>
       </section>
     </>

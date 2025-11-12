@@ -1,6 +1,7 @@
 export const serviceItems = [
   {
     id: 1,
+    src: "/service-hero.webp",
     title: "Basic Solution",
     name: "basic-solution",
     intro: "Een geavanceerde website met alle essentiële elementen voor online zichtbaarheid, inclusief een modern design.",
@@ -98,13 +99,14 @@ export const serviceItems = [
   },
   {
     id: 2,
+    src: "/service-hero.webp",
     title: "Advanced Solution",
     name: "advanced-solution",
     intro: "Een geavanceerde website met alle essentiële elementen voor online zichtbaarheid, inclusief meerdere pagina's.",
     description:
       "Het Advanced Solution pakket biedt dezelfde solide basis als het Basic Solution pakket, maar met extra mogelijkheden voor een uitgebreidere en meer gedetailleerde online presentatie.",
     introPrice: "Vanaf €299",
-    includes: ["Multi Pager (Uitlichting diensten of producten)", "Mobielvriendelijk", "Op basis van een template", "Basis Privacy- & Cookiebeleid", "Online webhosting", "Uitgebreide-SEO"],
+    includes: ["Multi Pager (Tot 8 pagina's)", "Mobielvriendelijk", "Op basis van een template", "Basis Privacy- & Cookiebeleid", "Online webhosting", "Uitgebreide-SEO"],
     specs: [
       {
         icon: "fa fa-code",
