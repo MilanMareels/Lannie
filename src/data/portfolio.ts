@@ -7,7 +7,7 @@ export const portfolio = [
   },
   {
     img: "/saba-services.webp",
-    category: "Electristiets werken",
+    category: "Elektriciteitswerken",
     title: "Saba services",
     link: "https://www.sabaservices.be",
   },
