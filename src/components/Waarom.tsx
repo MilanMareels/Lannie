@@ -13,7 +13,7 @@ const Waarom = () => {
               <i className="fa fa-rocket text-3xl text-[#259D84]"></i>
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Snelle Levering</h3>
-            <p className="text-gray-600 leading-relaxed">Uw website is binnen 7-14 dagen live. Geen lange wachttijden, wel kwaliteit en aandacht voor detail.</p>
+            <p className="text-gray-600 leading-relaxed">Uw website is binnen 14-20 dagen live. Geen lange wachttijden, wel kwaliteit en aandacht voor detail.</p>
           </div>
 
           <div className="text-center scroll-fade-in">
