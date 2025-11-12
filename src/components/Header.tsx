@@ -26,8 +26,8 @@ export default function Header() {
             <div className="max-w-3xl">
               <div className="hero-content">
                 <h1 className="hero-title text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-                  Websites die
-                  <span className="text-[#259D84] block hero-highlight">vooroplopen</span>
+                  Websites zonder
+                  <span className="text-[#259D84] block hero-highlight">gedoe</span>
                 </h1>
                 <p className="hero-subtitle text-xl md:text-2xl text-gray-700 mb-12 leading-relaxed max-w-2xl">
                   Moderne, krachtige websites die uw bedrijf naar het volgende niveau tillen. Van concept tot conversie.
