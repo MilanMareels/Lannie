@@ -1,5 +1,5 @@
 import { Service } from "../../types/service";
-import Includes from "./Includes";
+import CheckIcon from "./CheckIcon";
 
 interface CardProps {
   service: Service;
@@ -7,29 +7,28 @@ interface CardProps {
 
 export default function Card({ service }: CardProps) {
   return (
-    <div className="service-card rounded-lg relative h-[570px] w-[370px] shadow-xl cursor-pointer snap-start shrink-0 py-8 px-6 bg-white flex flex-col items-start gap-3 transition-all duration-300 group hover:bg-[#202127] wix">
-      <svg
-        stroke-linejoin="round"
-        stroke-linecap="round"
-        stroke-width="2"
-        stroke="#000000"
-        fill="none"
-        viewBox="0 0 24 24"
-        className="text-5xl h-12 w-12 stroke-gray-800 group-hover:stroke-gray-400"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect ry="2" rx="2" height="14" width="20" y="3" x="2"></rect>
-        <line y2="21" x2="16" y1="21" x1="8"></line>
-        <line y2="21" x2="12" y1="17" x1="12"></line>
-      </svg>
-
-      <p className="font-bold text-2xl group-hover:text-white text-black/80">{service.title}</p>
-
-      <p className="text-gray-400 text-sm">{service.intro}</p>
-
-      <Includes service={service} />
-
-      <p className="absolute bottom-3 right-3 text-2xl font-bold text-gray-300 group-hover:text-gray-500">{service.introPrice}</p>
+    <div className="bg-white rounded-3xl p-10 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 relative scroll-fade-in">
+      {service.id == 2 ? (
+        <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+          <span className="bg-[#259D84] text-white px-6 py-2 rounded-full text-sm font-semibold">Populair</span>
+        </div>
+      ) : (
+        ""
+      )}
+      <div className="text-center mb-8">
+        <h3 className="text-3xl font-bold text-gray-900 mb-4">{service.title}</h3>
+        <div className="text-5xl font-bold text-[#259D84] mb-2">{service.introPrice}</div>
+        <p className="text-gray-600">Voor professionals</p>
+      </div>
+      <ul className="space-y-4 mb-10">
+        {service.includes.map((item) => (
+          <li className="flex items-center">
+            <CheckIcon />
+            <span className="text-gray-700 ml-1">{item}</span>
+          </li>
+        ))}
+      </ul>
+      <button className="rounded-button whitespace-nowrap w-full bg-[#259D84] text-white py-4 font-semibold transition-colors duration-200 cursor-pointer">Meer info</button>
     </div>
   );
 }

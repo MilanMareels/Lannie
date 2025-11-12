@@ -143,8 +143,8 @@ export default function ContactForm() {
                   className="w-full px-4 py-4 bg-white border border-gray-200 rounded-xl text-gray-900 focus:border-[#259D84] focus:ring-2 focus:ring-[#259D84] transition-all duration-200 text-sm"
                 >
                   <option value="">Selecteer een pakket</option>
-                  <option value="basic">Basic Pakket - €199</option>
-                  <option value="advanced">Advanced Pakket - €299</option>
+                  <option value="basic">Basic Pakket - €249</option>
+                  <option value="advanced">Advanced Pakket - €399</option>
                   <option value="custom">Op maat gemaakt</option>
                 </select>
               </div>

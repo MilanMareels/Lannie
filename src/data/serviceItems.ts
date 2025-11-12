@@ -1,12 +1,14 @@
-export const serviceItems = [
+import { Service } from "../types/service";
+
+export const serviceItems: Service[] = [
   {
     id: 1,
     src: "/service-hero.webp",
     title: "Basic Solution",
     name: "basic-solution",
-    intro: "Een geavanceerde website met alle essentiële elementen voor online zichtbaarheid, inclusief een modern design.",
+    intro: "Een basic website met alle essentiële elementen voor online zichtbaarheid, inclusief een modern design.",
     description: "Het Basic Solution pakket biedt je een professionele one-page website, perfect voor een sterke en efficiënte online aanwezigheid.",
-    introPrice: "Vanaf €199",
+    introPrice: "Vanaf €249",
     includes: ["One Pager (Enkel een Home-Pagina)", "Mobielvriendelijk", "Op basis van een template", "Basis Privacy- & Cookiebeleid", "Online webhosting", "Basis-SEO"],
     specs: [
       {
@@ -17,7 +19,7 @@ export const serviceItems = [
       {
         icon: "fa fa-dashboard",
         title: "Performance",
-        items: ["< 3s laadtijd", "95+ Lighthouse score", "Image optimalisatie", "Code splitting", "CDN integratie"],
+        items: ["< 3s laadtijd", "70+ Lighthouse score", "Image optimalisatie", "Code splitting", "CDN integratie"],
       },
       {
         icon: "fa fa-shield",
@@ -65,7 +67,7 @@ export const serviceItems = [
         align: "right",
       },
       {
-        phase: "Launch",
+        phase: "Lanceren",
         duration: "1-2 dagen",
         description: "Website live zetten",
         icon: "fa fa-rocket",
@@ -103,9 +105,8 @@ export const serviceItems = [
     title: "Advanced Solution",
     name: "advanced-solution",
     intro: "Een geavanceerde website met alle essentiële elementen voor online zichtbaarheid, inclusief meerdere pagina's.",
-    description:
-      "Het Advanced Solution pakket biedt dezelfde solide basis als het Basic Solution pakket, maar met extra mogelijkheden voor een uitgebreidere en meer gedetailleerde online presentatie.",
-    introPrice: "Vanaf €299",
+    description: "Het Advanced Solution pakket biedt dezelfde solide basis als het Basic Solution pakket, maar biedt extra functies voor een uitgebreidere en gedetailleerdere online presentatie.",
+    introPrice: "Vanaf €399",
     includes: ["Multi Pager (Tot 8 pagina's)", "Mobielvriendelijk", "Op basis van een template", "Basis Privacy- & Cookiebeleid", "Online webhosting", "Uitgebreide-SEO"],
     specs: [
       {
@@ -116,7 +117,7 @@ export const serviceItems = [
       {
         icon: "fa fa-dashboard",
         title: "Performance",
-        items: ["< 3s laadtijd", "95+ Lighthouse score", "Image optimalisatie", "Code splitting", "CDN integratie"],
+        items: ["< 3s laadtijd", "70+ Lighthouse score", "Image optimalisatie", "Code splitting", "CDN integratie"],
       },
       {
         icon: "fa fa-shield",
@@ -164,7 +165,7 @@ export const serviceItems = [
         align: "right",
       },
       {
-        phase: "Launch",
+        phase: "Lanceren",
         duration: "1-2 dagen",
         description: "Website live zetten",
         icon: "fa fa-rocket",

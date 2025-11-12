@@ -59,19 +59,12 @@ export default function ServiceDetails() {
         <div className="relative z-10 min-h-screen flex items-center">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="max-w-4xl mx-auto text-center">
-              {service.id == 2 ? (
-                <div className="inline-flex items-center px-4 py-2 bg-[#259D84] text-white rounded-full text-sm font-semibold mb-8">
-                  <i className="fa fa-star mr-2"></i>Populairste keuze
-                </div>
-              ) : (
-                ""
-              )}
-              <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+              <h1 className="text-3xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
                 {service.title}
                 <span className="text-[#259D84] block">Pakket</span>
               </h1>
-              <div className="text-6xl md:text-8xl font-bold text-[#259D84] mb-6">{service.introPrice}</div>
-              <p className="text-xl md:text-2xl text-gray-700 mb-12 leading-relaxed max-w-3xl mx-auto">{service.description}</p>
+              <div className="text-5xl md:text-8xl font-bold text-[#259D84] mb-6">{service.introPrice}</div>
+              <p className="text-xl md:text-2xl text-gray-700 mb-12 leading-relaxed max-w-3xl mx-auto">{service.intro}</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#contact">
                   <button className="rounded-button whitespace-nowrap bg-[#259D84] text-white px-10 py-4 text-lg font-semibold transition-all duration-500 transform hover:scale-105 hover:shadow-2xl cursor-pointer">
