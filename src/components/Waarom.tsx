@@ -10,7 +10,7 @@ const Waarom = () => {
         <div className="grid md:grid-cols-3 gap-12">
           <div className="text-center scroll-fade-in">
             <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <i className="fas fa-rocket text-3xl text-blue-600"></i>
+              <i className="fa fa-rocket text-3xl text-blue-600"></i>
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Snelle Levering</h3>
             <p className="text-gray-600 leading-relaxed">Uw website is binnen 7-14 dagen live. Geen lange wachttijden, wel kwaliteit en aandacht voor detail.</p>
@@ -18,7 +18,7 @@ const Waarom = () => {
 
           <div className="text-center scroll-fade-in">
             <div className="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <i className="fas fa-palette text-3xl text-purple-600"></i>
+              <i className="fa fa-pencil text-3xl text-purple-600"></i>
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Professioneel Design</h3>
             <p className="text-gray-600 leading-relaxed">Moderne, responsieve designs die indruk maken op uw bezoekers en uw merk professioneel presenteren.</p>
@@ -26,7 +26,7 @@ const Waarom = () => {
 
           <div className="text-center scroll-fade-in">
             <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <i className="fas fa-headset text-3xl text-green-600"></i>
+              <i className="fa fa-commenting text-3xl text-green-600"></i>
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Volledige Service</h3>
             <p className="text-gray-600 leading-relaxed">Van concept tot lancering en daarna. Wij begeleiden u door het hele proces en bieden uitstekende ondersteuning.</p>

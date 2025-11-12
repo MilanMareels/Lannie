@@ -200,7 +200,7 @@ export default function ContactForm() {
                     type="submit"
                     className="rounded-button whitespace-nowrap bg-blue-600 hover:bg-blue-700 text-white px-12 py-4 text-lg font-semibold transition-all duration-300 transform hover:scale-105 cursor-pointer w-full"
                   >
-                    <i className="fas fa-paper-plane mr-2"></i>
+                    <i className="fa fa-paper-plane mr-2"></i>
                     Verstuur bericht
                   </button>
                 )}
