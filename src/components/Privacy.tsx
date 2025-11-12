@@ -1,6 +1,36 @@
 import { Helmet } from "react-helmet";
+import "../index.css";
+import { useEffect } from "react";
+import NavBarSection from "./NavBar";
 
 export default function PrivacyPage() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+
+    const handleScrollAnimations = () => {
+      const elements = document.querySelectorAll(".scroll-fade-in");
+      elements.forEach((element) => {
+        const elementTop = element.getBoundingClientRect().top;
+        const elementVisible = 150;
+
+        if (elementTop < window.innerHeight - elementVisible) {
+          element.classList.add("animate-in");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScrollAnimations);
+
+    // Initial check
+    handleScrollAnimations();
+
+    return () => {
+      window.removeEventListener("scroll", handleScrollAnimations);
+    };
+  }, []);
   return (
     <div>
       <Helmet>
@@ -9,7 +39,10 @@ export default function PrivacyPage() {
         <meta name="robots" content="noindex, follow" />
         <link rel="canonical" href="https://www.lannie.be/privacy" />
       </Helmet>
-      <div className="flex items-center justify-center py-8 px-4 wix">
+
+      <NavBarSection />
+
+      <div className="flex items-center justify-center py-8 px-4 wix mt-16">
         <div className="bg-white w-full max-w-screen-xl p-6 shadow-xl rounded-lg">
           <h1 className="text-3xl font-semibold text-center text-gray-800 mb-6">Privacy- en Policy</h1>
           <p className="text-sm text-gray-600 text-center mb-4">

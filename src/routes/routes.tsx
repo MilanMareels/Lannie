@@ -21,7 +21,6 @@ export const createRouter = () => {
       path: routerEnum.SERVICE_DETAILS,
       element: (
         <>
-          <NavBarSection />
           <ServiceDetails />
           <FooterSection />
         </>
@@ -31,7 +30,6 @@ export const createRouter = () => {
       path: routerEnum.PRIVACY,
       element: (
         <>
-          <NavBarSection />
           <PrivacyPage />
           <FooterSection />
         </>

@@ -25,10 +25,10 @@ export default function NavBarSection() {
   };
 
   return (
-    <div className="flex items-center justify-center p-4">
-      <Navbar fluid rounded theme={customTheme} className="p-4 w-[1200px] shadow-lg">
+    <div className="fixed top-0 left-0 right-0 z-50 flex items-center justify-center p-4">
+      <Navbar fluid rounded theme={customTheme} className="p-4 w-[1220px] shadow-lg bg-white/90 backdrop-blur-sm">
         <Navbar.Brand href="/">
-          <img src="/Logo-lannie.png" className="mr-3 h-6 sm:h-9 rounded" alt="webdesign in Merksem" loading="lazy" />
+          <img src="/Logo-lannie.webp" className="mr-3 h-6 sm:h-9 rounded" alt="webdesign in Merksem" loading="lazy" />
           <span className="text-xl orbitron">{companyName}</span>
         </Navbar.Brand>
         <Navbar.Toggle />
