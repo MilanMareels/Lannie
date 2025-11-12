@@ -28,7 +28,7 @@ const Waarom = () => {
             <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
               <i className="fa fa-commenting text-3xl text-[#259D84]"></i>
             </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Ervaring</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Ondersteuning</h3>
             <p className="text-gray-600 leading-relaxed">Van concept tot lancering en daarna. Wij begeleiden u door het hele proces en bieden uitstekende ondersteuning.</p>
           </div>
 
