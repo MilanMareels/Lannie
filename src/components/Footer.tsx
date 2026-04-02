@@ -1,6 +1,7 @@
 import { CustomFlowbiteTheme, Footer } from "flowbite-react";
 import { PopupButton } from "react-calendly";
 import { BsInstagram, BsLinkedin } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 export default function FooterSection() {
   const companyName: string = import.meta.env.VITE_COMPANY_NAME!;
@@ -12,7 +13,9 @@ export default function FooterSection() {
       <section className="py-24 bg-gray-900 wix">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center scroll-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Klaar om te beginnen?</h2>
-          <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">Laat ons uw visie omzetten in een prachtige, functionele website. Neem vandaag nog contact op voor een vrijblijvend gesprek.</p>
+          <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
+            Laat ons uw visie omzetten in een prachtige, functionele website. Neem vandaag nog contact op voor een vrijblijvend gesprek.
+          </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <PopupButton
               url="https://calendly.com/lanniewebdesign/30min"
@@ -58,16 +61,21 @@ export default function FooterSection() {
               <div>
                 <Footer.Title title="Legal" className="text-white wix" />
                 <Footer.LinkGroup col>
-                  <Footer.Link href="/privacy" className="text-white wix">
+                  <Link to="/privacy" className="text-white wix">
                     Privacy Policy
-                  </Footer.Link>
+                  </Link>
                 </Footer.LinkGroup>
               </div>
             </div>
           </div>
           <Footer.Divider />
           <div className="w-full sm:flex sm:items-center sm:justify-between text-center sm:text-left">
-            <Footer.Copyright href="#" by={`${companyName}. Ontworpen en ontwikkeld door Lannie`} year={new Date().getFullYear()} className="text-white wix" />
+            <Footer.Copyright
+              href="#"
+              by={`${companyName}. Ontworpen en ontwikkeld door Lannie`}
+              year={new Date().getFullYear()}
+              className="text-white wix"
+            />
             <div className="mt-4 flex justify-center space-x-6 sm:mt-0">
               <Footer.Icon href="https://www.linkedin.com/in/milan-mareels-58b472265/" target="blank" icon={BsLinkedin} className="text-white" />
               <Footer.Icon href="https://www.instagram.com/lanniewebdesign/" target="blank" icon={BsInstagram} className="text-white" />
