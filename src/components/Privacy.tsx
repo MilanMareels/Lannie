@@ -46,7 +46,7 @@ export default function PrivacyPage() {
         <div className="bg-white w-full max-w-screen-xl p-6 shadow-xl rounded-lg">
           <h1 className="text-3xl font-semibold text-center text-gray-800 mb-6">Privacy- en Policy</h1>
           <p className="text-sm text-gray-600 text-center mb-4">
-            Laatst bijgewerkt: <span className="font-bold">01/01/2025</span>
+            Laatst bijgewerkt: <span className="font-bold">01/01/2026</span>
           </p>
 
           <div className="space-y-6 text-gray-700">
@@ -59,7 +59,8 @@ export default function PrivacyPage() {
                   <li>Uw e-mailadres</li>
                   <li>Uw bericht</li>
                 </ul>
-                <strong>Belangrijk:</strong> Wij slaan deze gegevens niet op op onze servers of systemen. Uw gegevens worden uitsluitend gebruikt om uw vraag of verzoek te behandelen.
+                <strong>Belangrijk:</strong> Wij slaan deze gegevens niet op op onze servers of systemen. Uw gegevens worden uitsluitend gebruikt om
+                uw vraag of verzoek te behandelen.
               </p>
             </section>
 
@@ -71,15 +72,16 @@ export default function PrivacyPage() {
                   <li>Te reageren op uw vraag of verzoek</li>
                   <li>Contact met u op te nemen indien nodig</li>
                 </ul>
-                Wij delen uw gegevens niet met derden, tenzij dit noodzakelijk is om uw vraag te beantwoorden (bijvoorbeeld indien u ons vraagt om contact op te nemen met een externe partner).
+                Wij delen uw gegevens niet met derden, tenzij dit noodzakelijk is om uw vraag te beantwoorden (bijvoorbeeld indien u ons vraagt om
+                contact op te nemen met een externe partner).
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-semibold text-gray-800">3. Bewaren van gegevens</h2>
               <p>
-                Wij bewaren uw persoonsgegevens niet. Zodra uw gegevens via ons contactformulier worden verzonden, worden deze uitsluitend tijdelijk verwerkt om uw vraag te beantwoorden. Daarna
-                verwijderen wij de gegevens uit onze inbox en verwerken we deze niet verder.
+                Wij bewaren uw persoonsgegevens niet. Zodra uw gegevens via ons contactformulier worden verzonden, worden deze uitsluitend tijdelijk
+                verwerkt om uw vraag te beantwoorden. Daarna verwijderen wij de gegevens uit onze inbox en verwerken we deze niet verder.
               </p>
             </section>
 
@@ -103,8 +105,8 @@ export default function PrivacyPage() {
             <section>
               <h2 className="text-2xl font-semibold text-gray-800">5. Beveiliging van uw gegevens</h2>
               <p>
-                Hoewel wij geen gegevens opslaan, zorgen wij ervoor dat de verzending van gegevens via ons contactformulier veilig verloopt. Onze website maakt gebruik van een beveiligde
-                SSL-verbinding om uw gegevens te versleutelen tijdens de verzending.
+                Hoewel wij geen gegevens opslaan, zorgen wij ervoor dat de verzending van gegevens via ons contactformulier veilig verloopt. Onze
+                website maakt gebruik van een beveiligde SSL-verbinding om uw gegevens te versleutelen tijdens de verzending.
               </p>
             </section>
 
@@ -130,7 +132,10 @@ export default function PrivacyPage() {
 
             <section>
               <h2 className="text-2xl font-semibold text-gray-800">8. Wijzigingen aan dit beleid</h2>
-              <p>Wij kunnen dit privacybeleid van tijd tot tijd aanpassen. Controleer deze pagina regelmatig om op de hoogte te blijven van eventuele wijzigingen.</p>
+              <p>
+                Wij kunnen dit privacybeleid van tijd tot tijd aanpassen. Controleer deze pagina regelmatig om op de hoogte te blijven van eventuele
+                wijzigingen.
+              </p>
             </section>
           </div>
         </div>
