@@ -7,39 +7,73 @@ export default function ContactForm() {
   const [loading, setLoading] = useState<boolean>(false);
   const [messageCount, setMessageCount] = useState(0);
 
-  const subject: string = "Nieuw bericht van de klant";
-  const companyName: string = import.meta.env.VITE_COMPANY_NAME!;
-  const contactFormKey: string = import.meta.env.VITE_CONTACT_FORM_KEY!;
+  const klantId: string = import.meta.env.VITE_KLANT_ID || "test123";
 
   const onSubmit = async (event: any) => {
     event.preventDefault();
 
+    if (!accept) {
+      Swal.fire({
+        title: "Let op!",
+        text: "Je moet akkoord gaan met de voorwaarden.",
+        icon: "warning",
+        confirmButtonColor: "#259D84",
+      });
+      return;
+    }
+
     setLoading(true);
 
     const formData = new FormData(event.target);
+    const data = Object.fromEntries(formData.entries());
 
-    formData.append("access_key", contactFormKey);
+    const payload = {
+      ...data,
+      klantId: klantId,
+    };
 
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData,
-    });
+    try {
+      const response = await fetch("https://email.lannie.be/api/send-mail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
 
-    const data = await response.json();
+      const responseData = await response.json();
 
-    if (data.success && accept) {
-      setResult("Form Submitted Successfully");
+      if (response.ok && responseData.success) {
+        setResult("Form Submitted Successfully");
+        Swal.fire({
+          title: "Succes!",
+          text: "E-mail succesvol verzonden!",
+          icon: "success",
+          confirmButtonColor: "#259D84",
+        });
+        event.target.reset();
+        setAccept(false);
+        setMessageCount(0);
+      } else {
+        setResult(responseData.error || "Er is iets misgegaan.");
+        Swal.fire({
+          title: "Fout",
+          text: responseData.error || "Er kon geen verbinding worden gemaakt met de server.",
+          icon: "error",
+          confirmButtonColor: "#259D84",
+        });
+      }
+    } catch (error) {
+      console.error("Fout bij het verzenden:", error);
       Swal.fire({
-        title: "Succes!",
-        text: "E-mail succesvol verzonden!",
-        icon: "success",
+        title: "Fout",
+        text: "Er is een netwerkfout opgetreden. Is de server bereikbaar?",
+        icon: "error",
         confirmButtonColor: "#259D84",
       });
-      event.target.reset();
+    } finally {
       setLoading(false);
-      setMessageCount(0);
-    } else {
-      setResult(data.message);
     }
   };
 
@@ -60,9 +94,6 @@ export default function ContactForm() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-gray-50 rounded-3xl p-8 md:p-12 scroll-fade-in animate-in">
             <form onSubmit={onSubmit} className="space-y-8">
-              <input type="hidden" name="subject" value={subject} />
-              <input type="hidden" name="from_name" value={companyName} />
-
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
                   <label htmlFor="first-name" className="block text-sm font-semibold text-gray-900 mb-3">
@@ -102,7 +133,7 @@ export default function ContactForm() {
                   id="email"
                   name="email"
                   required
-                  className="w-full px-4 py-4 bg-white border border-gray-200 rounded-xl text-gray-900 placeholder-gray-500 focus:border-[#259D84] focus:ring-2 focus:ring-[#259D84] ransition-all duration-200 text-sm"
+                  className="w-full px-4 py-4 bg-white border border-gray-200 rounded-xl text-gray-900 placeholder-gray-500 focus:border-[#259D84] focus:ring-2 focus:ring-[#259D84] transition-all duration-200 text-sm"
                   placeholder="uw.email@example.com"
                 />
               </div>
