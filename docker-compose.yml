@@ -5,6 +5,7 @@ services:
       args:
         - VITE_COMPANY_NAME=${VITE_COMPANY_NAME}
         - VITE_CONTACT_FORM_KEY=${VITE_CONTACT_FORM_KEY}
+        - VITE_KLANT_ID=${VITE_KLANT_ID}
     container_name: website-lannie
     restart: unless-stopped
     ports:
