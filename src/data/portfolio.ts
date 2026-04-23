@@ -12,9 +12,15 @@ export const portfolio = [
     link: "https://www.sabaservices.be",
   },
   {
-    img: "/blablabar.webp",
-    category: "Events & Catering",
-    title: "Blablabar",
-    link: "https://www.blablabar.be",
+    img: "/carestonesolutions.webp",
+    category: "Vastgoed Onderhoud",
+    title: "Carestonesolutions",
+    link: "https://www.carestonesolutions.be",
+  },
+  {
+    img: "/ateliersynaeve.webp",
+    category: "Maatwerk meubles & Grafische design",
+    title: "Atelier Synaeve",
+    link: "https://www.ateliersynaeve.be",
   },
 ];
