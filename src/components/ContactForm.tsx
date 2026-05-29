@@ -176,6 +176,7 @@ export default function ContactForm() {
                   <option value="">Selecteer een pakket</option>
                   <option value="basic">Basic Pakket - €249</option>
                   <option value="advanced">Advanced Pakket - €399</option>
+                  <option value="renewal">Website Renewal - Prijs op aanvraag</option>
                   <option value="custom">Op maat gemaakt</option>
                 </select>
               </div>
