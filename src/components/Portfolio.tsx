@@ -15,12 +15,20 @@ const Portfolio = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Portfolio Items */}
           {portfolio.map((item, index) => (
-            <Link to={item.link} target="_blank">
-              <div
-                key={index}
-                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer scroll-fade-in"
-              >
+            // Let op: key={index} moet op het buitenste element in de map staan!
+            <Link key={index} to={item.link} target="_blank" className="block outline-none">
+              <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer scroll-fade-in h-full">
                 <div className="relative overflow-hidden">
+                  {item.type && (
+                    <div
+                      className={`absolute top-4 right-4 z-10 px-3 py-1.5 text-xs font-bold text-white rounded-full shadow-sm uppercase tracking-wider
+                        ${item.type === "redesign" ? "bg-orange-500" : "bg-[#259D84]"}
+                      `}
+                    >
+                      {item.type === "redesign" ? "Redesign" : "Nieuw"}
+                    </div>
+                  )}
+
                   <img
                     src={item.img}
                     alt={item.title}
