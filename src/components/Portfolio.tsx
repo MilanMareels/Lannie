@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { portfolio } from "../data/portfolio";
 
 const Portfolio = () => {
@@ -6,16 +7,33 @@ const Portfolio = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-20 scroll-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Ons Portfolio</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">Bekijk enkele van onze recent gerealiseerde projecten. Elk project is uniek en op maat gemaakt voor onze klanten.</p>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Bekijk enkele van onze recent gerealiseerde projecten. Elk project is uniek en op maat gemaakt voor onze klanten.
+          </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Portfolio Items */}
           {portfolio.map((item, index) => (
-            <a href={item.link} target="blank">
-              <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer scroll-fade-in">
+            // Let op: key={index} moet op het buitenste element in de map staan!
+            <Link key={index} to={item.link} target="_blank" className="block outline-none">
+              <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer scroll-fade-in h-full">
                 <div className="relative overflow-hidden">
-                  <img src={item.img} alt={item.title} className="w-full h-72 object-cover object-top transition-transform duration-300 hover:scale-105" />
+                  {item.type && (
+                    <div
+                      className={`absolute top-4 right-4 z-10 px-3 py-1.5 text-xs font-bold text-white rounded-full shadow-sm uppercase tracking-wider
+                        ${item.type === "redesign" ? "bg-orange-500" : "bg-[#259D84]"}
+                      `}
+                    >
+                      {item.type === "redesign" ? "Redesign" : "Nieuw"}
+                    </div>
+                  )}
+
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    className="w-full h-72 object-cover object-top transition-transform duration-300 hover:scale-105"
+                  />
                   <div className="absolute inset-0 bg-black/0 hover:bg-black/20 transition-colors duration-300"></div>
                 </div>
                 <div className="p-6">
@@ -23,7 +41,7 @@ const Portfolio = () => {
                   <h3 className="text-xl font-bold text-gray-900 mt-2">{item.title}</h3>
                 </div>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </div>
